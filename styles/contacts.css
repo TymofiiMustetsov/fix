@@ -1,0 +1,189 @@
+#contacts {
+  font-family: Poppins, sans-serif;
+}
+#contacts div.part-1 {
+  padding: 75px 220px;
+  text-align: center;
+}
+#contacts div.part-1 .title {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: #2D3D4D;
+}
+
+#contacts div.part-1 div.item {
+  margin-top: 60px;
+}
+
+#contacts div.part-1 div.contact-icon {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background: #0195FF;
+}
+#contacts div.part-1 div.contact-holder div.contact-icon  img{
+  margin: auto;
+}
+#contacts div.part-1 div.contact-holder span.name {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2D3D4C;
+  margin: 18px auto auto auto;
+}
+#contacts div.part-1 div.contact-holder span.content,
+#contacts div.part-1 div.contact-holder a.content{
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #0195FF;
+  margin: 9px auto auto auto;
+  text-decoration: none;
+}
+#contacts div.part-1 div.contact-holder span.address {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0 auto;
+}
+#contacts div.part-1 div.contact-holder div.socials {
+  justify-content: center;
+  margin-top: 10px;
+}
+#contacts div.part-1 div.contact-holder div.social {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+#contacts div.part-1 div.contact-holder div.social a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#contacts div.part-1 div.contact-holder div.social:first-child {
+  background: #4267B2;
+}
+#contacts div.part-1 div.contact-holder div.social:last-child {
+  background:#00A0DC;
+}
+#contacts div.part-1 div.contact-holder div.social img {
+  margin: auto;
+}
+
+#contacts div.part-1 div.contact-holder div.social.google-link img {
+  height: 30px;
+}
+
+#contacts div.part-1 div.map-holder {
+  margin-top: 55px;
+  position: relative;
+}
+#contacts div.part-1 div.map-holder img.map {
+  width: 100%;
+}
+#contacts div.part-1 div.map-holder img.point-on-map {
+  position: absolute;
+  left: calc(100% / 2.44);
+  top: calc(100% / 2.33);
+  width: calc(100% / 25);
+}
+
+
+
+#contacts div.part-2  {
+  background: #F7FAFC;
+}
+#contacts div.part-2 {
+  max-height: 350px;
+}
+#contacts div.part-2 img.right-img {
+  transform: translateY(80px);
+}
+#contacts div.part-2 div.controls-line {
+  max-width: 480px;
+  margin: 2rem auto;
+}
+#contacts div.part-2 div.controls-line div {
+  padding: 0 10px;
+}
+#contacts div.part-2 button.btn-signUp {
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  width: 210px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #FFFFFF;
+  margin: auto;
+  background: #0195FF;
+  letter-spacing: 0.06em;
+}
+#contacts div.part-2 button.btn-show {
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  width: 210px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #0195FF;
+  border: 3px solid rgba(182, 210, 230, 0.2);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: auto;
+  letter-spacing: 0.06em;
+}
+#contacts div.part-2 .section-1 {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+
+}
+#contacts div.part-2 .section-1 .title {
+  color: #2D3D4D;
+  font-weight: 600;
+  font-size: 40px;
+}
+#contacts div.part-2 p.them {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #75818C;
+  margin: 0  auto 1.25rem;
+  max-width: 450px;
+}
+
+#contacts div.part-3 {
+  background: #F7FAFC;
+}
+#contacts div.part-3 img.nut-image {
+  top: 0;
+  position: absolute;
+  right: 150px;
+}
+
+
+@media (max-width: 1200px) {
+  #contacts div.part-1 {
+    padding: 75px 120px;
+  }
+  #contacts div.part-2 .section-1 {
+    margin: 2rem auto 0 auto;
+  }
+  #contacts div.part-2 .section-1 .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  #contacts div.part-1 {
+    padding: 75px 80px;
+  }
+}
+@media (max-width: 767px) {
+  #contacts div.part-1 {
+    padding: 75px 1rem;
+  }
+}

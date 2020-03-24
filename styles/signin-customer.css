@@ -1,0 +1,204 @@
+#signin-customer div.left-part {
+  background: #eff0f3;
+  height: 100%;
+}
+#signin-customer div.sign-in-holder {
+  height: 100vh;
+}
+#signin-customer div.left-part div.top-part {
+  padding: 68px 0 38px 0;
+}
+#signin-customer div.left-part div.middle-part {
+  display: flex;
+}
+#signin-customer div.left-part div.middle-part div.background-holder {
+  position: relative;
+}
+#signin-customer div.left-part div.middle-part img.personal-area {
+  position: absolute;
+  top: 35px;
+  left: 107px;
+}
+#signin-customer div.left-part div.bottom-part {
+  padding: 35px 0 53px 0;
+}
+#signin-customer div.left-part div.bottom-part div.socials-wrapper {
+  flex-direction: row;
+  text-align: center;
+}
+#signin-customer div.left-part div.bottom-part button.socials {
+  display: inline-block;
+  border-radius: 5px;
+  outline: none;
+  padding: 0;
+  margin: 5px;
+}
+#signin-customer div.left-part div.bottom-part button.socials.google-button {
+  width: 194px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: capitalize;
+  display: inline-flex;
+  background: #F14336;
+}
+#signin-customer div.left-part div.bottom-part button.socials.google-button span {
+  margin: auto auto auto 7px;
+}
+#signin-customer div.left-part div.bottom-part button.socials.google-button img {
+  margin: auto 0 auto auto;
+}
+
+#signin-customer div.right-part {
+  background: white;
+}
+#signin-customer div.right-part .title {
+  margin: 145px 0 2rem 0;
+  text-align: center;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-size: 24px;
+  color: #2D3D4D;
+  font-weight: 600;
+}
+#signin-customer div.right-part div.form-part {
+  padding: 0 155px;
+  user-select: none;
+}
+#signin-customer div.right-part form div.form-group {
+  margin-bottom: 10px;
+}
+#signin-customer div.right-part form div.form-group.password-group {
+  position: relative;
+}
+#signin-customer div.right-part form div.form-group .eye-password {
+  position: absolute;
+  right: 1rem;
+  top: 24px;
+  z-index: 2;
+  fill: #DADADA;
+}
+#signin-customer div.right-part form div.form-group .eye-password:hover {
+  cursor: pointer;
+}
+#signin-customer div.right-part form input {
+  padding: 18px;
+  height: auto;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  color: #2D3D4C;
+  border: 1px solid #ECEEF4;
+  border-radius: 4px;
+}
+#signin-customer div.right-part form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #A3AEBA;
+  opacity: 1; /* Firefox */
+}
+#signin-customer div.right-part form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #A3AEBA;
+}
+#signin-customer div.right-part form input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #A3AEBA;
+}
+#signin-customer div.right-part form input.last-name {
+  margin: auto auto auto 10px;
+}
+
+#signin-customer div.right-part form div.form-group label.error,
+#signin-customer div.right-part form div.error{
+  color: #e3564b;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+}
+
+#signin-customer div.right-part form div.form-group.agree-rules-block {
+  margin: 1.5rem 0;
+  font-size: 12px;
+  display: flex;
+}
+#signin-customer div.right-part form div.form-group.agree-rules-block label {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  color: #A3AEBA;
+  line-height: 1.6rem;
+}
+#signin-customer div.right-part form div.form-group.agree-rules-block a {
+  margin: auto 0 auto auto;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #0195FF;
+  text-decoration: none;
+}
+#signin-customer div.right-part form div.form-group.agree-rules-block .custom-control-input:checked~.custom-control-label::before{
+  background: #0195FF;
+  border-color: #0195FF;
+}
+#signin-customer div.right-part form button.button-accept {
+  background: #0195FF;
+  border-radius: 3px;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 19px 0;
+  margin-bottom: 2.5rem;
+}
+#signin-customer div.right-part form div.have-account-block {
+  text-align: center;
+}
+#signin-customer div.right-part form div.have-account-block a {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #0195FF;
+  text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+
+  #signin-customer div.sign-in-holder {
+    height: auto;
+  }
+
+  #signin-customer div.left-part div.top-part {
+    padding: 0.5rem 0 0;
+  }
+
+
+  #signin-customer div.left-part div.bottom-part {
+    padding: 1rem 0;
+  }
+
+  #signin-customer div.left-part div.bottom-part div.socials-wrapper {
+    flex-direction: column;
+  }
+
+  #signin-customer div.right-part .title {
+    margin: 1rem 0 1rem 0;
+  }
+
+  #signin-customer div.right-part div.user-role {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+
+  #signin-customer div.right-part div.form-part {
+    padding: 0 0.5rem;
+  }
+  #signin-customer div.right-part form button.button-accept  {
+    margin-bottom: 0.5rem
+  }
+
+}
+@media (max-width: 568px) {
+  #signin-customer div.left-part div.middle-part {
+    display: none;
+  }
+}

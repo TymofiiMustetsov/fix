@@ -1,0 +1,7 @@
+li.jstree-leaf:not([aria-level="4"]) {
+  display: none;
+}
+
+div#jstree_div {
+overflow: hidden;
+}

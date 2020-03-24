@@ -1,0 +1,141 @@
+#technician-profile {
+  background: #f7fafc;
+}
+
+#technician-profile div.right-part {
+  background: #f7fafc !important;
+}
+
+#technician-profile div.sidebar-switch-block {
+  background: #f7fafc !important;
+}
+
+#technician-profile div.part-1 {
+  padding: 20px 89px 0;
+  font-family: Poppins, sans-serif;
+}
+
+#technician-profile div.part-1 .separator-row {
+  margin-top: 2rem;
+}
+
+#technician-profile div.part-1 .separator {
+  border-top: 0.5px solid #ECF0F5;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+#technician-profile .sub-title {
+  font-size: 26px;
+  text-align: center;
+}
+
+#signup-company div.top-separator {
+  background: #EBF2F7;
+  height: 1px;
+}
+
+#signup-company div.sidebar-switch-block {
+  background: white;
+}
+
+#signup-company button.button-switch {
+  color: #fff;
+  background-color: #2d96cd;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 35px;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  transition: background-color 500ms ease-in-out;
+  margin: 5px;
+  border: none;
+  display: flex;
+}
+#signup-company button.button-switch::after {
+  content: '';
+  margin: auto;
+  width: .5em;
+  height: .5em;
+  border-right: .1em solid #fff;
+  border-bottom: .1em solid #fff;
+  transform: rotate(-580deg);
+
+  display: inline-block;
+
+  transition: transform 1s ease-in-out;
+}
+#signup-company button.button-switch:hover {
+  color: #fff;
+  background-color: #1b394e;
+  text-decoration: none;
+}
+#signup-company button.button-switch.active::after {
+
+  transform: rotate(-45deg);
+  transition: transform 1s ease-in-out;
+}
+#signup-company div.sidebar-wrapper {
+  max-width: 280px;
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+
+}
+#signup-company div.sidebar-wrapper.active {
+  margin-left: -280px;
+}
+#signup-company div.wrapper {
+  padding: 29px 80px;
+  background: #f7fafc;
+}
+
+#signup-company .title {
+  font-weight: 600;
+  font-size: 26px;
+  color: #2D3D4D;
+  display: inline-block;
+  margin: 0;
+}
+
+#signup-company #main-contacts div.right-part div.form-part {
+  padding: 0 89px 100px 89px;
+  user-select: none;
+}
+
+#technician-profile form div.group-with-link div.input-holder {
+  position: relative;
+}
+
+#technician-profile form div.group-with-link div.input-holder a {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 22px;
+  width: 125px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+#technician-profile form div.group-with-link a {
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+  #technician-profile div.part-1,
+  #signup-company #main-contacts div.right-part div.form-part {
+    padding: 0 2rem;
+  }
+}
+
+
+@media (max-width: 567px) {
+  #signup-company div.sidebar-wrapper {
+    position: absolute;
+    z-index: 1;
+    max-width: 100%;
+  }
+}
+

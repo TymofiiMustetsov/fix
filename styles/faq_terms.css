@@ -1,0 +1,466 @@
+#faq-page,
+#terms-page {
+  background: #F7FAFC;
+  min-height: calc(100vh - 187px);
+}
+
+#faq-page div.part-2 {
+  padding: 70px 0;
+  margin: 0;
+  background: #F7FAFC;
+}
+
+#faq-page div.part-2 span.small-title {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C0D2E1;
+}
+
+#faq-page div.part-2 h2.title {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+
+#faq-page div.part-2 div.accordion div.card {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 15px rgba(230, 237, 241, 0.46);
+  margin-bottom: 1rem;
+  border: none;
+  font-family: Poppins, sans-serif;
+  border-radius: 4px;
+}
+
+#faq-page div.part-2 div.accordion div.card div.card-header {
+  background: #FFFFFF;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #EBF2F6;
+  padding: 22px 32px 22px 40px;
+}
+
+#faq-page div.part-2 div.accordion div.card div.card-header div.mb-0 {
+  display: flex;
+}
+
+#faq-page div.part-2 div.accordion div.card div.card-header div.mb-0 span {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2F3739;
+  margin: auto auto auto 0;
+}
+
+#faq-page div.part-2 div.accordion div.card div.card-header div.mb-0 button {
+  background: white;
+  border: 1px solid #EAF2F8;
+  border-radius: 3px;
+  padding: 12px;
+  margin: auto 0 auto auto;
+  text-decoration: none;
+  display: flex;
+}
+
+#faq-page div.part-2 div.accordion div.card div.card-header div.mb-0 button:not(.collapsed) {
+  background: #EAF2F8;
+  border-color: transparent;
+}
+
+#faq-page div.part-2 div.accordion div.card div.card-header div.mb-0 button img {
+  margin: auto;
+  transition: all 0.15s ease-in;
+}
+
+div.accordion div.card div.card-header div.mb-0 button.collapsed img {
+  transform: rotate(-180deg);
+}
+
+
+div.accordion div.card div.card-header div.mb-0 button:not(.collapsed) img {
+  transform: rotate(0);
+}
+
+#faq-page div.part-2 div.accordion div.card div.card-body {
+  font-size: 12px;
+  color: #2F3739;
+  padding: 22px 40px 22px 40px;
+  text-align: left;
+}
+
+#faq-page div.part-1,
+#terms-page div.part-1 {
+  margin: 5em 0 0rem 0;
+}
+
+#faq-page div.part-1 .title,
+#terms-page div.part-1 .title {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  color: #2D3D4C;
+  margin-bottom: 1.5rem;
+  margin: 0 auto;
+}
+
+#faq-page div.part-1 .separator-row,
+#terms-page div.part-1 .separator-row {
+  margin-top: 2rem;
+}
+
+#faq-page div.part-1 .separator,
+#terms-page div.part-1 .separator {
+  border-top: 0.5px solid #ECF0F5;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+#faq-page div.part-2 {
+  padding: 0 89px 100px 89px;
+  margin-top: 2rem !important;
+}
+
+
+#terms-page div.terms-of-use {
+  margin: 0 0 0 0;
+  margin-top: 2rem !important;
+}
+
+#terms-page div.terms-of-use span.small-title {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C0D2E1;
+}
+
+#terms-page div.terms-of-use h2.title {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#terms-page div.terms-of-use div.information {
+  background: #FFFFFF;
+  border: 1px solid #EBF2F6;
+  border-radius: 4px;
+  padding: 2em 1em 1em;
+}
+
+#terms-page div.terms-of-use div.information h2.sub-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2F3739;
+}
+
+#terms-page div.terms-of-use div.information div.content {
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  color: #2F3739;
+  line-height: 22px;
+  padding-right: 2rem;
+
+}
+
+
+#terms-page div.terms-of-use div.information div.content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(182, 210, 230, 0.2);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#terms-page div.terms-of-use div.information div.content::-webkit-scrollbar {
+  width: 4px;
+  background-color: #F5F5F5;
+}
+
+#terms-page div.terms-of-use div.information div.content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px rgba(182, 210, 230, 0.2);
+  background-color: #0195FF;
+}
+
+#terms-page .doc_list li {
+  list-style: none;
+  text-align: left;
+  font-size: 14px;
+  display: inline-block;
+}
+
+#terms-page .pdf_block {
+  margin: 20px;
+  font-weight: normal;
+}
+
+
+#terms-page .pdf_file {
+  display: flex;
+  flex-direction: column;
+}
+
+#terms-page .pdf_file svg {
+  margin: 15px auto;
+}
+
+#faq-page ul.nav-tabs,
+#terms-page ul.nav-tabs {
+  border: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  min-width: 300px;
+}
+
+#faq-page li.nav-item:first-child,
+#terms-page li.nav-item:first-child {
+  margin: 0 30px 0 auto;
+}
+
+#faq-page li.nav-item:last-child,
+#terms-page li.nav-item:last-child {
+  margin: 0 auto 0 30px;
+}
+
+#faq-page span.nav-link,
+#terms-page span.nav-link {
+  padding: 8px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid transparent;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #BED2E1;
+}
+
+#faq-page span.nav-link.active,
+#terms-page span.nav-link.active {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #0195FF;
+  color: #0195FF;
+  background: transparent;
+}
+
+#faq-page div.tab-content div.tab-pane p,
+#terms-page div.tab-content div.tab-pane p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #75818C;
+}
+
+
+#terms-page .image-pdf {
+  background: url(../img/login_logo.svg) no-repeat center center;
+  height: 40px;
+  width: 40px;
+}
+
+#faq-page div.part-7 {
+  margin-top: 100px !important;
+}
+
+#faq-page div.part-7 .section-left {
+  padding: 128px 0 115px 0;
+}
+
+
+#faq-page div.part-7 .section-left span.contacts-text {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C0D2E1;
+}
+
+#faq-page div.part-7 .section-left .bottom-title {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #2D3D4C;
+  margin-bottom: 20px;
+}
+
+#faq-page div.part-7 .section-left div.contacts-block {
+  margin: 0 0 20px 0;
+}
+
+#faq-page div.part-7 .section-left div.contacts-block span {
+  margin: 0 auto auto 14px;
+  max-width: 205px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2D3D4C;
+}
+
+#faq-page div.part-7 .section-left div.contacts-block img {
+  margin: auto 0;
+}
+
+
+#faq-page div.part-7 div.socials {
+  margin: 27px 0 auto 0;
+  width: 132px;
+}
+
+#faq-page div.part-7 div.social-wrapper {
+  margin: 0 9px 0 auto;
+}
+
+#faq-page div.part-7 div.logos-holder img {
+  position: absolute;
+}
+
+#faq-page div.part-7 img.engineer-idol {
+  height: 120%;
+  bottom: 0;
+  right: 0;
+}
+
+#faq-page div.part-7 img.fixario-emblem {
+  bottom: 0;
+  width: 100%
+}
+
+#faq-page div.part-7 .block-right {
+  text-align: right;
+}
+
+#faq-page div.part-7 .block-right img {
+  position: relative;
+  top: -50px;
+}
+
+@media (max-width: 1400px) {
+  #faq-page div.part-1,
+  #terms-page div.part-1 {
+    padding: 0 2rem;
+  }
+
+  #faq-page div.part-2,
+  #terms-page div.terms-of-use {
+    padding: 0 2rem;
+  }
+}
+
+
+div#terms-page div.part-2 {
+  max-height: 350px;
+}
+
+div#terms-page div.part-2 img.right-img {
+  transform: translateY(80px);
+}
+
+div#terms-page div.part-2 div.controls-line {
+  max-width: 480px;
+  margin: 2rem auto;
+}
+
+div#terms-page div.part-2 div.controls-line div {
+  padding: 0 10px;
+}
+
+div#terms-page div.part-2 button.btn-signUp {
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  width: 210px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #FFFFFF;
+  margin: auto;
+  background: #0195FF;
+  letter-spacing: 0.06em;
+}
+
+div#terms-page div.part-2 button.btn-show {
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  width: 210px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #0195FF;
+  border: 3px solid rgba(182, 210, 230, 0.2);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: auto;
+  letter-spacing: 0.06em;
+}
+
+div#terms-page div.part-2 .section-1 {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+
+}
+
+div#terms-page div.part-2 .section-1 .title {
+  color: #2D3D4D;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+div#terms-page div.part-2 p.them {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #75818C;
+  margin: 0 auto 1.25rem;
+  max-width: 450px;
+}
+
+
+@media (max-width: 1400px) {
+  #faq-page,
+  #terms-page {
+    min-height: calc(100vh - 222px);
+  }
+}
+
+@media (max-width: 1200px) {
+  #faq-page div.part-7 .section-left {
+    padding: 128px 0 115px 120px;
+  }
+
+  #terms-page div.part-2 .section-1 {
+    margin: 2rem auto 0 auto;
+  }
+
+  #terms-page div.part-2 .section-1 .title {
+    font-size: 2rem;
+  }
+
+  #terms-page div.terms-of-use {
+    margin-bottom: 2em !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #faq-page div.part-7 .section-left {
+    padding: 128px 2rem 120px 2rem;
+  }
+}

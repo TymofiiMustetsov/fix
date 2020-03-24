@@ -1,0 +1,493 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/head :: head">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"></head>
+<body>
+
+<div th:replace="fragments/header :: header"></div>
+<div id="tech-search">
+
+    <link href="styles/bootstrap-datetimepicker.css" rel="stylesheet" media="screen"/>
+
+    <link href="scripts/jquery-nice-select/css/nice-select.css" rel="stylesheet" media="screen"/>
+    <link href="scripts/jquery-modal/jquery-modal.css" rel="stylesheet" media="screen"/>
+
+    <link href="scripts/countdown-timer/circle.css" rel="stylesheet" media="screen"/>
+    <link href="styles/tech-search.css" rel="stylesheet" media="screen"/>
+
+    <link media="screen" rel="stylesheet" href="styles/bootstrap.min.css"/>
+
+    <script type="text/javascript" src="scripts/jquery-nice-select/js/jquery.nice-select-multi.js"></script>
+    <script type="text/javascript" src="scripts/show-nice-select.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="scripts/datepicker-search-tech.js"></script>
+    <script type="text/javascript" src="scripts/date.format.js"></script>
+    <script src="scripts/moment/moment.js"></script>
+    <script type="text/javascript" src="scripts/jquery-nice-scroll/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-nice-scroll/nice-scroll-launch.js"></script>
+
+    <script  src="scripts/jquery-modal/jqury-modal.js"></script>
+    <script  src="scripts/jquery-modals.js"></script>
+    <script  src="scripts/countdown-timer/circle.js"></script>
+
+    <div class="row m-0 tech-search-holder">
+        <div class="col-12 p-0">
+            <div id="search-form-fixario">
+                <div id="step-1-fixario">
+                    <div class="step-label">
+                    <span class="step-label-text">
+                      STEP 1
+                    </span>
+                    </div>
+                    <h1 class="step-title">Searching for a tech</h1>
+                    <h3 class="step-description">From part time to full time jobs, search job listings by title, category, location or browse popular jobs.</h3>
+                    <div id="pick-profession-tool-fixario">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="left-element col-xl-6 col-sm-12">
+                                    <span class="field-label">Category*</span>
+                                    <!-- -->
+                                    <div class="nice-select-group">
+                                        <select id="category-fixario" class="required form-control niceSelect wide profession-control" name="job">
+                                            <option value="0"> Select a category</option>
+                                            <th:block th:each="category : ${categoryList}">
+                                                <option th:value="${category.id}"> [[${category.categoryName}]]</option>
+                                            </th:block>
+                                        </select>
+                                        <div class="jobError"></div>
+                                    </div>
+                                </div>
+                                <div class="right-element col-xl-6 col-sm-12">
+                                    <span class="field-label">Profession*</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="use-profile">
+
+                                <th:block th:if="${address.zip == null}">
+                                    <input id="useProfileAddress" name="useProfileAddress" type="checkbox" value="true">
+                                </th:block>
+                                <th:block th:if="${address.zip != null}">
+                                    <input checked id="useProfileAddress" name="useProfileAddress" type="checkbox"
+                                           value="true">
+                                </th:block>
+
+                                Use profile Address
+                            </label>
+                        </div>
+
+                        <div class="addressInfo row">
+                            <div class="form-group col-6 ">
+                                <span class="field-label">ZIP*</span>
+                                <input type="text" readonly class="form-control" th:value="${address.zip}"
+                                       th:maxlength="10" id="search-box-fixario" name="postal-code"
+                                       maxlength="24" minlength="5" placeholder="Enter your postal code"
+                                       size="24">
+                                <div class="postCodeError"></div>
+                                <div id="suggesstion-box"></div>
+
+                            </div>
+                            <div class="form-group col-6">
+                                <span class="field-label">Street*</span>
+                                <input class="streetName form-control" readonly th:value="${address.streetName}"
+                                       type="text"
+                                       id="streetName" name="streetName" placeholder="Street Name">
+                                <div class="streetNameError"></div>
+                            </div>
+                            <div class="form-group col-6">
+                                <span class="field-label">House number*</span>
+                                <input class="streetName form-control" readonly th:value="${address.houseNumber}"
+                                       type="text"
+                                       id="houseNumber" name="houseNumber" placeholder="House Number">
+                                <div class="houseNumberError"></div>
+                            </div>
+                            <div class="form-group col-6">
+                                <span class="field-label">Additional address info</span>
+                                <input class="streetName form-control" readonly th:value="${address.flatNumber}"
+                                       type="text"
+                                       id="flatNumber" name="flatNumber" placeholder="Additional address information">
+                            </div>
+                        </div>
+                        <button class="btn btn-primary button-accept search-tech-next-btn search-tech-step1-next">
+                            <span>Pricing:  €10 one time arrival costs + €40 per hour</span>
+                        </button>
+                    </div>
+                </div>
+                <div id="step-2-fixario">
+                    <div class="step-label">
+                        <span class="step-label-text">
+                          STEP 2
+                        </span>
+                    </div>
+                    <h1 class="step-title">Time & date of job</h1>
+                    <h3 class="step-description">From part time to full time jobs, search job listings by title, category, location or browse popular jobs.</h3>
+                    <div id="pick-time-data-tool">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="left-element col-xl-6 col-sm-12">
+
+                                    <span class="field-label">Date*</span>
+                                    <div class="picker-holder">
+                                        <input class="form-control" id="datepicker" name="date"
+                                               autocomplete="off" placeholder="Choose Date" type="text">
+                                        <img th:src="@{/img/signup/calendar-datepicker-search.svg}">
+                                    </div>
+
+                                </div>
+                                <div class="right-element col-xl-6 col-sm-12">
+
+
+                                    <span class="field-label">Time*</span>
+                                    <div class="picker-holder">
+                                        <input class="form-control" id="timepicker" name="time"
+                                               autocomplete="off" placeholder="Choose Time" type="text">
+                                        <img th:src="@{/img/signup/calendar-timepicker-search.svg}">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Please select who will provide parts and materials.</label>
+                            <div class="gender-menu d-flex">
+                                <div class="d-flex">
+                                    <label class="btn btn-primary gender-item selected d-flex">
+                                        <input checked name="customer_pay_for_details" type="radio" value="true"/>
+                                        <svg fill="none" height="14" viewBox="0 0 14 14" width="14"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path clip-rule="evenodd"
+                                                  d="M7.00043 3.5C5.04043 3.5 3.50043 5.04 3.50043 7C3.50043 8.96 5.04043 10.5 7.00043 10.5C8.96043 10.5 10.5004 8.96 10.5004 7C10.5004 5.04 8.96043 3.5 7.00043 3.5ZM7 0C3.15 0 0 3.15 0 7C0 10.85 3.15 14 7 14C10.85 14 14 10.85 14 7C14 3.15 10.85 0 7 0ZM6.99966 12.6001C3.91966 12.6001 1.39966 10.0801 1.39966 7.00008C1.39966 3.92009 3.91966 1.40009 6.99966 1.40009C10.0797 1.40009 12.5997 3.92009 12.5997 7.00008C12.5997 10.0801 10.0797 12.6001 6.99966 12.6001Z"
+                                                  fill-rule="evenodd"/>
+                                        </svg>
+                                        <span>Customer</span>
+
+                                    </label>
+                                    <label class="btn btn-primary gender-item   d-flex">
+                                        <input name="customer_pay_for_details" type="radio" value="false"/>
+                                        <svg fill="none" height="14" viewBox="0 0 14 14" width="14"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path clip-rule="evenodd"
+                                                  d="M7.00043 3.5C5.04043 3.5 3.50043 5.04 3.50043 7C3.50043 8.96 5.04043 10.5 7.00043 10.5C8.96043 10.5 10.5004 8.96 10.5004 7C10.5004 5.04 8.96043 3.5 7.00043 3.5ZM7 0C3.15 0 0 3.15 0 7C0 10.85 3.15 14 7 14C10.85 14 14 10.85 14 7C14 3.15 10.85 0 7 0ZM6.99966 12.6001C3.91966 12.6001 1.39966 10.0801 1.39966 7.00008C1.39966 3.92009 3.91966 1.40009 6.99966 1.40009C10.0797 1.40009 12.5997 3.92009 12.5997 7.00008C12.5997 10.0801 10.0797 12.6001 6.99966 12.6001Z"
+                                                  fill-rule="evenodd"/>
+                                        </svg>
+                                        <span>Technician</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="information">Provide additional information</label>
+                            <textarea class="form-control information-field" id="information" rows="3"
+                                      placeholder="Type here..."></textarea>
+                        </div>
+                        <div class="form-group file-upload-group">
+                            <style>
+                                #jobPhotoTool img {
+                                    width: calc(20% - 60px);
+                                    height: auto;
+                                }
+
+                                #jobPhotoTool ul li.viewer > span > span {
+                                    cursor: pointer;
+                                    color: #ff3560;
+                                    margin: 0 20px;
+                                }
+
+                                #jobPhotoTool ul li.viewer > span.img-slot {
+                                    display: none;
+                                }
+
+                            </style>
+                            <div id="jobPhotoTool">
+                                <ul class="row">
+                                    <li class="item col-xl-12 col-lg-11 col-md-12 col-sm-12 p-0">
+                                        <div>
+                                            <label>Upload pictures: </label>
+                                        </div>
+                                    </li>
+                                    <li class="item col-xl-12 col-lg-11 col-md-11 col-sm-11 col-11 p-0">
+                                        <div class="jobPhoto_block upload-file_block">
+                                            <input id="jobPhoto" name="jobPhotoToolInput" type="file">
+                                            <span class="button">Choose file</span>
+                                            <span class="label" data-js-label="">No file selected</span>
+                                        </div>
+                                    </li>
+                                    <li class="viewer item col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 p-0">
+                                        <span class="img-slot"><img
+                                            th:src="@{/img/signup/upload-file-cloud-company.svg}"> <span
+                                            class="deleteBtn">
+                                            <svg fill="none" height="15" viewBox="0 0 12 15" width="12"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.3048 1.79712H7.99492C7.87969 0.787142 7.02958 0 5.99999 0C4.97042 0 4.12044 0.787111 4.00521 1.79712H1.69521C0.760414 1.79712 0 2.56598 0 3.51086V3.59879C0 4.32085 0.444787 4.93888 1.07137 5.1907V13.2863C1.07137 14.2312 1.83187 15 2.7666 15H9.23343C10.1682 15 10.9286 14.2311 10.9286 13.2863V5.19073C11.5552 4.93888 12 4.32085 12 3.59882V3.51089C12 2.56598 11.2395 1.79712 10.3048 1.79712ZM5.99999 0.812731C6.58556 0.812731 7.07433 1.23699 7.18249 1.79712H4.8177C4.92582 1.23696 5.41463 0.812731 5.99999 0.812731ZM10.1246 13.2863C10.1246 13.7831 9.72473 14.1873 9.2334 14.1873H2.76657C2.27524 14.1873 1.87537 13.783 1.87537 13.2863V5.31252H10.1246V13.2863ZM11.196 3.59879C11.196 4.09559 10.7961 4.49982 10.3048 4.49982H1.69521C1.20388 4.49982 0.804001 4.09559 0.804001 3.59879V3.51086C0.804001 3.01406 1.20388 2.60982 1.69521 2.60982H10.3048C10.7961 2.60982 11.196 3.01406 11.196 3.51086L11.196 3.59879Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M3.84464 13.1479C4.06667 13.1479 4.24664 12.966 4.24664 12.7416V8.16621C4.24664 7.94184 4.06664 7.75983 3.84464 7.75983C3.62265 7.75983 3.44264 7.94184 3.44264 8.16621V12.7416C3.44261 12.966 3.62262 13.1479 3.84464 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M5.99999 13.1479C6.22201 13.1479 6.40202 12.966 6.40202 12.7416V8.16621C6.40202 7.94184 6.22195 7.75983 5.99999 7.75983C5.77799 7.75983 5.59798 7.94184 5.59798 8.16621V12.7416C5.59798 12.966 5.77796 13.1479 5.99999 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M8.15533 13.1479C8.37732 13.1479 8.5573 12.966 8.5573 12.7416V8.16621C8.5573 7.94184 8.37729 7.75983 8.15533 7.75983C7.93327 7.75983 7.7533 7.94184 7.7533 8.16621V12.7416C7.75327 12.966 7.93333 13.1479 8.15533 13.1479Z"
+                                                fill="#F25151"/>
+                                            </svg></span></span>
+                                        <span class="img-slot"><img
+                                            th:src="@{/img/signup/upload-file-cloud-company.svg}"> <span
+                                            class="deleteBtn">
+                                            <svg fill="none" height="15" viewBox="0 0 12 15" width="12"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.3048 1.79712H7.99492C7.87969 0.787142 7.02958 0 5.99999 0C4.97042 0 4.12044 0.787111 4.00521 1.79712H1.69521C0.760414 1.79712 0 2.56598 0 3.51086V3.59879C0 4.32085 0.444787 4.93888 1.07137 5.1907V13.2863C1.07137 14.2312 1.83187 15 2.7666 15H9.23343C10.1682 15 10.9286 14.2311 10.9286 13.2863V5.19073C11.5552 4.93888 12 4.32085 12 3.59882V3.51089C12 2.56598 11.2395 1.79712 10.3048 1.79712ZM5.99999 0.812731C6.58556 0.812731 7.07433 1.23699 7.18249 1.79712H4.8177C4.92582 1.23696 5.41463 0.812731 5.99999 0.812731ZM10.1246 13.2863C10.1246 13.7831 9.72473 14.1873 9.2334 14.1873H2.76657C2.27524 14.1873 1.87537 13.783 1.87537 13.2863V5.31252H10.1246V13.2863ZM11.196 3.59879C11.196 4.09559 10.7961 4.49982 10.3048 4.49982H1.69521C1.20388 4.49982 0.804001 4.09559 0.804001 3.59879V3.51086C0.804001 3.01406 1.20388 2.60982 1.69521 2.60982H10.3048C10.7961 2.60982 11.196 3.01406 11.196 3.51086L11.196 3.59879Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M3.84464 13.1479C4.06667 13.1479 4.24664 12.966 4.24664 12.7416V8.16621C4.24664 7.94184 4.06664 7.75983 3.84464 7.75983C3.62265 7.75983 3.44264 7.94184 3.44264 8.16621V12.7416C3.44261 12.966 3.62262 13.1479 3.84464 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M5.99999 13.1479C6.22201 13.1479 6.40202 12.966 6.40202 12.7416V8.16621C6.40202 7.94184 6.22195 7.75983 5.99999 7.75983C5.77799 7.75983 5.59798 7.94184 5.59798 8.16621V12.7416C5.59798 12.966 5.77796 13.1479 5.99999 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M8.15533 13.1479C8.37732 13.1479 8.5573 12.966 8.5573 12.7416V8.16621C8.5573 7.94184 8.37729 7.75983 8.15533 7.75983C7.93327 7.75983 7.7533 7.94184 7.7533 8.16621V12.7416C7.75327 12.966 7.93333 13.1479 8.15533 13.1479Z"
+                                                fill="#F25151"/>
+                                            </svg></span></span>
+                                        </span></span>
+                                        <span class="img-slot"><img
+                                            th:src="@{/img/signup/upload-file-cloud-company.svg}"> <span
+                                            class="deleteBtn">
+                                            <svg fill="none" height="15" viewBox="0 0 12 15" width="12"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.3048 1.79712H7.99492C7.87969 0.787142 7.02958 0 5.99999 0C4.97042 0 4.12044 0.787111 4.00521 1.79712H1.69521C0.760414 1.79712 0 2.56598 0 3.51086V3.59879C0 4.32085 0.444787 4.93888 1.07137 5.1907V13.2863C1.07137 14.2312 1.83187 15 2.7666 15H9.23343C10.1682 15 10.9286 14.2311 10.9286 13.2863V5.19073C11.5552 4.93888 12 4.32085 12 3.59882V3.51089C12 2.56598 11.2395 1.79712 10.3048 1.79712ZM5.99999 0.812731C6.58556 0.812731 7.07433 1.23699 7.18249 1.79712H4.8177C4.92582 1.23696 5.41463 0.812731 5.99999 0.812731ZM10.1246 13.2863C10.1246 13.7831 9.72473 14.1873 9.2334 14.1873H2.76657C2.27524 14.1873 1.87537 13.783 1.87537 13.2863V5.31252H10.1246V13.2863ZM11.196 3.59879C11.196 4.09559 10.7961 4.49982 10.3048 4.49982H1.69521C1.20388 4.49982 0.804001 4.09559 0.804001 3.59879V3.51086C0.804001 3.01406 1.20388 2.60982 1.69521 2.60982H10.3048C10.7961 2.60982 11.196 3.01406 11.196 3.51086L11.196 3.59879Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M3.84464 13.1479C4.06667 13.1479 4.24664 12.966 4.24664 12.7416V8.16621C4.24664 7.94184 4.06664 7.75983 3.84464 7.75983C3.62265 7.75983 3.44264 7.94184 3.44264 8.16621V12.7416C3.44261 12.966 3.62262 13.1479 3.84464 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M5.99999 13.1479C6.22201 13.1479 6.40202 12.966 6.40202 12.7416V8.16621C6.40202 7.94184 6.22195 7.75983 5.99999 7.75983C5.77799 7.75983 5.59798 7.94184 5.59798 8.16621V12.7416C5.59798 12.966 5.77796 13.1479 5.99999 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M8.15533 13.1479C8.37732 13.1479 8.5573 12.966 8.5573 12.7416V8.16621C8.5573 7.94184 8.37729 7.75983 8.15533 7.75983C7.93327 7.75983 7.7533 7.94184 7.7533 8.16621V12.7416C7.75327 12.966 7.93333 13.1479 8.15533 13.1479Z"
+                                                fill="#F25151"/>
+                                            </svg></span></span>
+                                        </span></span>
+                                        <span class="img-slot"><img
+                                            th:src="@{/img/signup/upload-file-cloud-company.svg}"> <span
+                                            class="deleteBtn">
+                                            <svg fill="none" height="15" viewBox="0 0 12 15" width="12"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.3048 1.79712H7.99492C7.87969 0.787142 7.02958 0 5.99999 0C4.97042 0 4.12044 0.787111 4.00521 1.79712H1.69521C0.760414 1.79712 0 2.56598 0 3.51086V3.59879C0 4.32085 0.444787 4.93888 1.07137 5.1907V13.2863C1.07137 14.2312 1.83187 15 2.7666 15H9.23343C10.1682 15 10.9286 14.2311 10.9286 13.2863V5.19073C11.5552 4.93888 12 4.32085 12 3.59882V3.51089C12 2.56598 11.2395 1.79712 10.3048 1.79712ZM5.99999 0.812731C6.58556 0.812731 7.07433 1.23699 7.18249 1.79712H4.8177C4.92582 1.23696 5.41463 0.812731 5.99999 0.812731ZM10.1246 13.2863C10.1246 13.7831 9.72473 14.1873 9.2334 14.1873H2.76657C2.27524 14.1873 1.87537 13.783 1.87537 13.2863V5.31252H10.1246V13.2863ZM11.196 3.59879C11.196 4.09559 10.7961 4.49982 10.3048 4.49982H1.69521C1.20388 4.49982 0.804001 4.09559 0.804001 3.59879V3.51086C0.804001 3.01406 1.20388 2.60982 1.69521 2.60982H10.3048C10.7961 2.60982 11.196 3.01406 11.196 3.51086L11.196 3.59879Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M3.84464 13.1479C4.06667 13.1479 4.24664 12.966 4.24664 12.7416V8.16621C4.24664 7.94184 4.06664 7.75983 3.84464 7.75983C3.62265 7.75983 3.44264 7.94184 3.44264 8.16621V12.7416C3.44261 12.966 3.62262 13.1479 3.84464 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M5.99999 13.1479C6.22201 13.1479 6.40202 12.966 6.40202 12.7416V8.16621C6.40202 7.94184 6.22195 7.75983 5.99999 7.75983C5.77799 7.75983 5.59798 7.94184 5.59798 8.16621V12.7416C5.59798 12.966 5.77796 13.1479 5.99999 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M8.15533 13.1479C8.37732 13.1479 8.5573 12.966 8.5573 12.7416V8.16621C8.5573 7.94184 8.37729 7.75983 8.15533 7.75983C7.93327 7.75983 7.7533 7.94184 7.7533 8.16621V12.7416C7.75327 12.966 7.93333 13.1479 8.15533 13.1479Z"
+                                                fill="#F25151"/>
+                                            </svg></span></span>
+                                        </span></span>
+                                        <span class="img-slot"><img
+                                            th:src="@{/img/signup/upload-file-cloud-company.svg}"> <span
+                                            class="deleteBtn">
+                                            <svg fill="none" height="15" viewBox="0 0 12 15" width="12"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.3048 1.79712H7.99492C7.87969 0.787142 7.02958 0 5.99999 0C4.97042 0 4.12044 0.787111 4.00521 1.79712H1.69521C0.760414 1.79712 0 2.56598 0 3.51086V3.59879C0 4.32085 0.444787 4.93888 1.07137 5.1907V13.2863C1.07137 14.2312 1.83187 15 2.7666 15H9.23343C10.1682 15 10.9286 14.2311 10.9286 13.2863V5.19073C11.5552 4.93888 12 4.32085 12 3.59882V3.51089C12 2.56598 11.2395 1.79712 10.3048 1.79712ZM5.99999 0.812731C6.58556 0.812731 7.07433 1.23699 7.18249 1.79712H4.8177C4.92582 1.23696 5.41463 0.812731 5.99999 0.812731ZM10.1246 13.2863C10.1246 13.7831 9.72473 14.1873 9.2334 14.1873H2.76657C2.27524 14.1873 1.87537 13.783 1.87537 13.2863V5.31252H10.1246V13.2863ZM11.196 3.59879C11.196 4.09559 10.7961 4.49982 10.3048 4.49982H1.69521C1.20388 4.49982 0.804001 4.09559 0.804001 3.59879V3.51086C0.804001 3.01406 1.20388 2.60982 1.69521 2.60982H10.3048C10.7961 2.60982 11.196 3.01406 11.196 3.51086L11.196 3.59879Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M3.84464 13.1479C4.06667 13.1479 4.24664 12.966 4.24664 12.7416V8.16621C4.24664 7.94184 4.06664 7.75983 3.84464 7.75983C3.62265 7.75983 3.44264 7.94184 3.44264 8.16621V12.7416C3.44261 12.966 3.62262 13.1479 3.84464 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M5.99999 13.1479C6.22201 13.1479 6.40202 12.966 6.40202 12.7416V8.16621C6.40202 7.94184 6.22195 7.75983 5.99999 7.75983C5.77799 7.75983 5.59798 7.94184 5.59798 8.16621V12.7416C5.59798 12.966 5.77796 13.1479 5.99999 13.1479Z"
+                                                fill="#F25151"/>
+                                            <path
+                                                d="M8.15533 13.1479C8.37732 13.1479 8.5573 12.966 8.5573 12.7416V8.16621C8.5573 7.94184 8.37729 7.75983 8.15533 7.75983C7.93327 7.75983 7.7533 7.94184 7.7533 8.16621V12.7416C7.75327 12.966 7.93333 13.1479 8.15533 13.1479Z"
+                                                fill="#F25151"/>
+                                            </svg></span></span>
+                                        </span></span>
+                                    </li>
+                                </ul>
+                                <span>up to 5 items, max 5 Mb for each photo</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-md-6 col-sm-12">
+                                <button class="btn btn-light button-back">Back</button>
+                            </div>
+                            <div class="col-xl-6 col-md-6 col-sm-12">
+                                <button class="btn btn-primary button-accept search-tech-next-btn search-tech-step1-next">
+                                    <span>Price per hour:   $40</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="step-3-fixario">
+                    <div class="step-label">
+                        <span class="step-label-text">
+                          STEP 3
+                        </span>
+                    </div>
+
+                    <h1 class="step-title">Billing information</h1>
+                    <h3 class="step-description"><br/><br/><br/><br/><br/><br/></h3>
+                    <div class="step-content">
+                        <br/><br/><br/><br/><br/>
+                        <div class="row">
+                            <div class="col-xl-6 col-md-6 col-sm-12">
+                                <button class="btn btn-light button-back">Back</button>
+                            </div>
+                            <div class="col-xl-6 col-md-6 col-sm-12">
+                                <button
+                                    class="btn btn-primary button-accept search-tech-next-btn search-tech-step1-next">
+                                    <span>Price per hour:   $40</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="step-4-fixario">
+                <div class="step-label">
+                        <span class="step-label-text">
+                          STEP 4
+                        </span>
+                </div>
+
+                <h1 class="step-title">Congratulations!</h1>
+                <h3 class="step-description">
+
+                </h3>
+                <div class="step-content">
+                    <h3 class="content-title">
+                        Company's contact person is:
+                    </h3>
+                    <div class="rating">
+                        <div class="info d-flex flex-column">
+                            <div class="avatar-block">
+                                <img th:src="@{/img/tech-search/technican-avatar.png}">
+                            </div>
+
+                            <div class="name-block">
+                                <span class="tech-name">Katerina M.</span>
+                            </div>
+                            <div class="d-flex">
+                                <div class="d-flex m-auto">
+                                    <div class="job-type"><span class="m-auto">Reinigung</span></div>
+                                    <div  class="price">  <span class="m-auto">$40/h</span></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="value d-flex">
+                            <div class="m-auto d-flex rating-block">
+                                <div class="title-holder">
+                                    <span class="label">Overall rating:</span>
+                                </div>
+                                <div class="amount-holder">
+                                    <span id="amount" class="amount">
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-md-6 col-sm-12">
+                            <button id="abort" class="btn btn-light button-back">Reject</button>
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12">
+                            <button id="next-step"
+                                class="btn btn-primary button-accept ">
+                                <span>Continue</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="policy-block text-center">
+                        Please check our <a href="#" class="policy-link">Cancellation policy</a> before proceeding
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script  src="scripts/tech-search.js"></script>
+
+
+<div id="waitingModal" class="modal">
+    <div class="top-part">
+    <!--    <a href="#" rel="modal:close" class="btn btn-link close"><img th:src="@{/img/requests/cross-modal.svg}"></a>-->
+    </div>
+
+    <div class="form-group d-flex">
+        <div id="circle-1" class="m-auto">
+            <div class="loader-bg">
+                <div class="text">40</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <h2 class="message">Fixario is searching<br>for available technicians</h2>
+    </div>
+
+    <div class="">
+       <button id="cancel-searching" class="btn btn-info btn-cancel" >CANCEL</button>
+    </div>
+</div>
+
+<div id="cancelModal" class="modal">
+    <div class="top-part">
+     <!--   <a href="#" rel="modal:close" class="btn btn-link close"><img th:src="@{/img/requests/cross-modal.svg}"></a>-->
+    </div>
+
+    <div class="form-group d-flex">
+       <img class="m-auto" th:src="@{/img/tech-search/fixario-logo.svg}">
+    </div>
+
+    <div class="form-group">
+        <h2 class="message">Want to cancel whole<br>operation or find another<br>technician?</h2>
+    </div>
+    <div class="form-group">
+        <button id="confirm-activate" class="btn btn-primary btn-save">ANOTHER TECHNICIAN</button>
+    </div>
+    <div class="">
+        <button id="back-to-start" class="btn btn-info btn-cancel">Cancel search</button>
+    </div>
+</div>
+
+<div id="requestAcceptedModal" class="modal">
+    <div class="top-part">
+       <!-- <a  href="#" rel="modal:close" class="btn btn-link close"><img th:src="@{/img/requests/cross-modal.svg}"></a>-->
+    </div>
+
+    <div class="form-group d-flex">
+        <img class="m-auto" th:src="@{/img/tech-search/fixario-logo.svg}">
+    </div>
+
+    <div class="form-group">
+        <h2 class="message">Your request was accepted!<br>The correct technician will appear in you requests' list</h2>
+    </div>
+    <div class="form-group">
+        <button id="ok" class="btn btn-primary btn-save">ok</button>
+    </div>
+</div>
+
+<div replace="fragments/footer :: footer">Footer</div>
+
+
+
+</body>
+</html>
+
+

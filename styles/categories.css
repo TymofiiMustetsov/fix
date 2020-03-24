@@ -1,0 +1,210 @@
+#categories div.part-1 {
+  padding: 75px 120px 120px;
+}
+#categories div.part-1 .title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  color: #2D3D4D;
+  margin-bottom: 60px;
+}
+#categories div.part-1 .time-matters {
+  background: #F7FAFC;
+  border-radius: 5px;
+  padding: 30px 30px 50px 50px;
+}
+#categories div.part-1 .time-matters .title {
+  font-weight: 600;
+  font-size: 24px;
+  color: #2D3D4C;
+  text-align: left;
+}
+#categories div.part-1 .time-matters ul {
+  padding: 0 0 0 20px;
+}
+
+#categories div.part-1 .time-matters ul li.name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2D3D4C;
+}
+#categories div.part-1 .time-matters ul li.name ul {
+  list-style-type: none;
+  font-size: 14px;
+  color: #A6B7C7;
+  margin: 10px 0 22px;
+  padding: 0;
+}
+#categories div.part-1 .time-matters ul li.name ul li:not(:last-child){
+  margin-bottom: 7px;
+}
+#categories div.part-1 .time-matters ul li.name ul li span {
+  background: #E5F1F9;
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin: 0 0 0 10px;
+}
+#categories div.part-1 .time-matters ul li.name ul li span.more-than-100 {
+  color: #0195FF;
+}
+
+#categories div.part-1 div.categories-items {
+  padding: 0 0 0 40px;
+}
+
+
+#categories div.part-1 div.category div.category-items-holder {
+  flex-direction: column;
+  margin: 0;
+}
+
+#categories div.part-1  div.category span.category-name {
+  margin: auto auto auto 11px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #2D3D4C;
+}
+#categories div.part-1  div.category div.category-body {
+  background: #FFFFFF;
+  box-shadow: 0 7px 10px rgba(230, 237, 241, 0.53);
+  border-radius: 5px;
+  display: flex;
+  padding: 1.5rem 1.75rem;
+  margin: 13px 0 0 0;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+#categories div.part-1  div.category div.category-body span.price {
+  font-weight: 500;
+  font-size: 13px;
+  color: #0195FF;
+  padding: 4px 7px;
+  background: #E5F1F9;
+  border-radius: 4px;
+  margin: auto 0;
+}
+
+#categories div.part-1 div.categories-items div.left-part {
+
+}
+#categories div.part-1 div.categories-items div.right-part {
+
+}
+
+#categories div.part-1 div.left-part div.col:not(:first-child) div.category,
+#categories div.part-1 div.right-part div.col:not(:first-child) div.category{
+  margin: 35px auto 0 0;
+}
+
+
+
+
+
+#categories div.part-7 {
+  background: #F7FAFC;
+}
+#categories div.part-7 .section-left {
+  padding: 128px 0 115px 0;
+}
+
+#categories div.part-7 .section-left  span.contacts-text {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C0D2E1;
+}
+#categories div.part-7 .section-left .bottom-title {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #2D3D4C;
+  margin-bottom: 20px;
+}
+#categories div.part-7 .section-left div.contacts-block {
+  margin: 0 0 20px 0;
+}
+#categories div.part-7 .section-left div.contacts-block span{
+  margin: 0 auto auto 14px;
+  max-width: 205px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2D3D4C;
+}
+#categories div.part-7 .section-left div.contacts-block img {
+  margin: auto 0;
+}
+
+#categories div.part-7 div.socials {
+  margin: 27px 0 auto 0;
+  width: 132px;
+}
+#categories div.part-7 div.social-wrapper  {
+  margin: 0 9px 0 auto;
+}
+#categories div.part-7 div.logos-holder img {
+  position: absolute;
+}
+#categories div.part-7 img.engineer-idol {
+  height: 120%;
+  bottom: 0;
+  right: 0;
+}
+#categories div.part-7 img.fixario-emblem {
+  width: 100%;
+  bottom: 0;
+}
+#categories div.part-7 .block-right {
+  text-align: right;
+}
+#categories div.part-7 .block-right img {
+  position: relative;
+  top: -50px;
+}
+
+@media (max-width: 1400px) {
+  #categories div.part-1 {
+    padding: 75px 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  #categories div.part-7 .section-left {
+    padding: 128px 0 115px 120px;
+  }
+
+}
+
+
+
+
+@media (max-width: 991px) {
+  #categories div.part-7 .section-left {
+    padding: 128px 2rem 120px 2rem;
+  }
+  #categories div.part-1 {
+    padding: 75px 1rem;
+  }
+  #categories div.part-1 div.right-part div.col div.category{
+    margin: 35px auto 0 0;
+  }
+}
+
+@media (max-width: 978px) {
+  #categories div.part-7 .section-left {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #categories div.part-1 div.categories-items {
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,297 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../fonts/Poppins/poppins.css';
+@import '../fonts/Roboto/roboto.css';
+
+
+body {
+background: white;
+  font-family: Poppins, sans-serif;
+}
+
+
+#options {
+  user-select: none;
+}
+
+div.dd-container {
+  width: 72px;
+  margin: auto;
+}
+
+ul.dd-options {
+  width: 72px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+li.spacer-holder {
+  padding: 1.813rem 0;
+  display: flex;
+}
+
+
+
+label.dd-selected-text {
+  display: none!important;
+}
+
+div.dd-select {
+  border: none;
+  border-radius: 8px;
+  background: #F7FAFC!important;
+  width: 72px;
+}
+
+a.dd-selected {
+  padding: 14px;
+}
+
+a.dd-option:hover {
+  background: #F7FAFC;
+}
+
+a.dd-option-selected {
+  background: #F7FAFC;
+}
+
+span.dd-pointer {
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -4px;
+}
+
+span.dd-pointer-down{
+  border: none;
+}
+
+span.dd-pointer-up {
+  border: none!important;
+}
+
+label.dd-option-text {
+  margin: 0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+span.dd-pointer-down::before {
+  border-style: solid;
+  border-width: 0.10em 0.10em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.35em;
+  width: 0.35em;
+  left: 0.15em;
+  position: relative;
+  top: 0;
+  transform: rotate(135deg);
+  vertical-align: top;
+}
+span.dd-pointer-up::before {
+
+  transform: rotate(-45deg);
+  margin-top: 3px;
+}
+
+div.dropdown-menu {
+  padding: 0;
+  width: auto;
+
+  position: absolute;
+  border: none;
+  box-shadow: 0px 0px 20px rgba(233, 232, 242, 0.5);
+}
+#dd {
+  top: 72px;
+}
+#dd2 {
+  top: 50px;
+  left: unset;
+}
+
+
+
+#dd a.dropdown-item {
+  padding: 1.25rem;
+}
+
+#dd2 a.dropdown-item {
+  padding: 0.75rem 1.25rem;
+  overflow: hidden;
+}
+
+
+
+
+a.dropdown-item:focus {
+  background: none;
+}
+
+
+img.dropdown-icon,
+svg.dropdown-icon{
+  margin-right: 14px;
+}
+
+span.dropdown-item-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  margin: auto 0;
+  color: #96AEC4;
+}
+
+span.dropdown-item-title.logout {
+  color: #FF5858;
+}
+
+div.dropdown-divider {
+  margin: 0 20px;
+}
+
+
+div.dropdown-menu.collapsing {
+  display:block;
+}
+div.dropdown a.nav-link.dropdown-toggle::after{
+  display: none;
+}
+
+
+
+span.log-in {
+  color: #0195FF;
+}
+a[aria-expanded="false"] span.log-in:after{
+  border-top:0.15em solid;
+  border-right:  0.15em solid;;
+  border-bottom:0;
+  border-left: 0;
+  content: '';
+  display: inline-block;
+  height: 0.51em;
+  width: 0.51em;
+  left: 0.65em;
+  position: relative;
+  transform: rotate(135deg);
+  margin-top: -5px;
+  vertical-align: middle;
+}
+a[aria-expanded="true"] span.log-in:after{
+  border-top:0.15em solid;
+  border-right:  0.15em solid;;
+  border-bottom:0;
+  border-left: 0;
+  content: '';
+  display: inline-block;
+  height: 0.51em;
+  width: 0.51em;
+  left: 0.65em;
+  position: relative;
+  transform: rotate(-45deg);
+  margin-top: 2px;
+  vertical-align: middle;
+}
+
+
+button.sign-btn {
+  background: #E6F3FC;
+  border: none;
+  color:  #0195FF;;
+  font-weight: 600;
+  font-family: Poppins, sans-serif;
+  width: 108px;
+  text-transform: uppercase;
+}
+
+div.rating .br-widget a {
+  font-size: 10px;
+}
+
+div.rating .br-widget {
+  height: auto;
+}
+
+div.rating .br-widget a.br-selected:after,
+div.rating .br-widget a.br-fractional:after{
+  color: #0195FF;
+}
+
+
+
+div.dropdown-divider {
+  margin: 0 20px;
+}
+
+div.footer {
+  position: relative;
+  left: 0;
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.modal {
+  height: unset;
+  padding:  0 50px 50px 50px;
+  position: relative;
+}
+.modal a.close-modal {
+  display: none;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+  background: #F7FAFC;
+  color: #0195FF;
+  border-left: 2px solid #0195FF;
+}
+
+.social-wrapper.google-link img {
+  height: 38px;
+}
+@media (min-width: 991px) {
+  div.dd-container {
+    margin: auto;
+  }
+
+
+
+
+}
+
+
+@media (max-width: 991px) {
+  li.spacer-holder {
+    display: none;
+  }
+  li.language-item {
+    padding: 0.5em 0;
+  }
+  li.user-item {
+    padding: 0.5rem 0;
+  }
+  /* div.footer {
+    top: calc(100vh - 153px);
+  }*/
+
+}
+
+@media (max-width: 768px) {
+  div.accordion div.card div.card-body {
+    padding: 22px 1rem 22px 48px;
+  }
+}
+
+@media (max-width: 567px) {
+  .modal {
+
+    padding:  0 1rem 1rem 1rem;
+
+  }
+}
+
+

@@ -1,0 +1,374 @@
+
+#company-admin {
+  background: #f7fafc;
+}
+
+#company-admin .main-content {
+  padding: 0 89px 100px 89px;
+  margin-top: 2rem;
+}
+
+#company-admin div.part-1 {
+  padding: 20px 89px 0;
+  font-family: Poppins, sans-serif;
+}
+
+#company-admin div.top-separator {
+  background: #EBF2F7;
+  height: 1px;
+}
+#company-admin div.sidebar-switch-block {
+  background: #f7fafc;
+}
+#company-admin button.button-switch {
+  color: #fff;
+  background-color: #2d96cd;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 35px;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  transition: background-color 500ms ease-in-out;
+  margin: 5px;
+  border: none;
+  display: flex;
+}
+#company-admin button.button-switch::after {
+  content: '';
+  margin: auto;
+  width: .5em;
+  height: .5em;
+  border-right: .1em solid #fff;
+  border-bottom: .1em solid #fff;
+  transform: rotate(-580deg);
+
+  display: inline-block;
+
+  transition: transform 1s ease-in-out;
+}
+#company-admin button.button-switch:hover {
+  color: #fff;
+  background-color: #1b394e;
+  text-decoration: none;
+}
+#company-admin button.button-switch.active::after {
+
+  transform: rotate(-45deg);
+  transition: transform 1s ease-in-out;
+}
+#company-admin div.sidebar-wrapper {
+  max-width: 280px;
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+
+}
+#company-admin div.sidebar-wrapper.active {
+  margin-left: -280px;
+}
+#company-admin div.wrapper {
+  padding: 29px 80px;
+  background: #f7fafc;
+}
+
+
+
+
+
+
+
+
+
+
+
+#company-admin .title {
+  font-weight: 600;
+  font-size: 26px;
+  color: #2D3D4D;
+  display: inline-block;
+  margin: 0;
+}
+
+
+#company-admin .separator-row {
+  margin-top: 2rem;
+}
+#company-admin .separator{
+  border-top: 0.5px solid #ECF0F5;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+
+#company-admin  div.gender-menu {
+  margin: auto 0 auto auto;
+}
+#company-admin  div.gender-part {
+  margin: 2rem auto 1.5rem auto;
+}
+
+#company-admin img.avatar-image {
+  max-width: 100px;
+}
+
+#company-admin  div.gender-menu .gender-item {
+  padding: 10px 21px;
+  background: rgba(234, 235, 241, 0.36);
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 0;
+  position: relative;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  align-items: center;
+  color: #2D3D4D;
+}
+#company-admin  div.gender-menu .gender-item:not(:first-child) {
+  margin: auto auto auto 8px;
+}
+
+#company-admin  div.gender-menu .gender-item{
+  background: #E6F3FC;
+}
+#company-admin  div.gender-menu  .gender-item svg {
+  fill: #D9E1E9;
+  margin: auto 0 auto auto;
+}
+#company-admin  div.gender-menu  .gender-item svg {
+  fill: #3996FD;
+}
+#company-admin  div.gender-menu  .gender-item span{
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  align-items: center;
+  color: #2D3D4D;
+  margin: auto auto auto 7px;
+}
+#company-admin  div.gender-menu .gender-item input{
+  /*height: 0.1px;*/
+  position: absolute;
+  top: calc(50% - 6px);
+  left: 22px;
+}
+#company-admin div.delete-block {
+  justify-content: flex-end;
+}
+
+#company-admin div.delete-block .delete-account {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  color: #F25151;
+  text-decoration: none;
+}
+#company-admin div.delete-block .delete-account img{
+  margin-right: 10px;
+}
+
+#company-admin div.upload-part {
+  margin: 2rem 0;
+}
+
+
+
+#company-admin form div.file-upload-group {
+  width: 220px;
+  margin-bottom: 0;
+}
+
+#company-admin form div.file-upload-group div.img-load-controls {
+
+  margin: 10px 0 0 0;
+}
+#company-admin form div.file-upload-group div.img-load-controls a.delete-control {
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #BEC9D2;
+  text-decoration: none;
+  margin: auto auto auto 0;
+}
+#company-admin form div.file-upload-group div.img-load-controls label.upload-new {
+  text-decoration: none;
+  color: #0195FF;
+  margin: auto 0 auto auto;
+  cursor: pointer;
+}
+#company-admin form div.file-upload-group div.img-load-controls a.delete-control img {
+  margin: auto 0 auto auto ;
+}
+#company-admin form div.file-upload-group div.img-load-controls a.delete-control span {
+  margin: auto auto auto 7px ;
+}
+
+
+#company-admin  form div.form-group input.company-logo-block {
+  display: none
+}
+#company-admin  form div.form-group label.custom-file-upload {
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px dashed rgba(205, 218, 227, 0.46);
+  justify-content: center;
+  transition: box-shadow 0.4s ease-out;
+  cursor: pointer;
+  margin: 0;
+}
+
+#company-admin  form div.form-group label.custom-file-upload img {
+  margin: auto auto 5px auto;
+}
+#company-admin  form div.form-group label.custom-file-upload span.file-loader-title {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0195FF;
+  margin: 10px auto auto auto;
+}
+
+#company-admin form div.inputs-row span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #BEC9D2;
+  padding-left: 5px;
+}
+
+#company-admin  form input{
+  padding: 16.5px 22px;
+  height: auto;
+  font-family: Poppins, sans-serif;
+  color: #2D3D4C;
+  border: 1px solid #ECEEF4;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#company-admin  form div.save-holder {
+  justify-content: start;
+}
+
+#company-admin form button.save {
+  background: #2d96cd;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 48px;
+  width: 235px;
+  transition: background-color 500ms ease-in-out;
+}
+
+#company-admin form button.save:hover {
+  color: #fff;
+  background-color: #1b394e;
+  text-decoration: none;
+}
+
+#company-admin div.item-row {
+  margin: 0 -5px 0 -5px;
+
+}
+#company-admin div.item {
+  padding: 0 5px 0 5px;
+
+}
+#company-admin form div.group-with-link a {
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+#company-admin form div.group-with-link a span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #0195FF;
+}
+
+
+#company-admin form div.group-with-link div.link-block {
+  background-color: #e9ecef;
+  height: 56px;
+  display: flex;
+  padding: 0 22px;
+}
+
+#company-admin form div.group-with-link div.input-holder {
+  position: relative;
+}
+#company-admin form div.group-with-link div.input-holder a {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 22px;
+  width: 125px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+
+#company-admin  .main-content .justify-content-between{
+  align-items: center;
+}
+
+@media (max-width: 1400px) {
+  #company-admin .main-content,
+  #company-admin .title{
+    padding: 0 2em;
+
+  }
+}
+@media(max-width: 1024px){
+  #company-admin form div.save-holder{
+    justify-content: center;
+  }
+}
+
+@media(max-width: 991px) {
+  #company-admin {
+    padding: 2rem 1rem;
+
+  }
+  @media(max-width: 768px) {
+    #company-admin form button.save{
+      width: 100%;
+    }
+  }
+  #company-admin  form div.save-holder {
+    justify-content: center;
+  }
+
+}
+
+
+
+@media(max-width: 567px) {
+  #company-admin form div.save-holder button.save {
+    width: 100%;
+  }
+
+  #company-admin div.delete-block {
+    justify-content: flex-start;
+  }
+  input#userPhoto {
+    max-width: 310px;
+  }
+  #company-admin div.sidebar-wrapper {
+    position: absolute;
+    z-index: 1;
+    max-width: 100%;
+  }
+}
+
+
+

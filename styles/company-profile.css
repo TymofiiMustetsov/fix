@@ -1,0 +1,396 @@
+#company-profile {
+  background: #f0f4f761;
+}
+
+#company-profile div.part-1 {
+  padding: 20px 89px 0;
+  font-family: Poppins, sans-serif;
+}
+
+
+#company-profile div.top-separator {
+  background: #EBF2F7;
+  height: 1px;
+}
+#company-profile div.sidebar-switch-block {
+  background: #f7fafc;
+}
+#company-profile button.button-switch {
+  color: #fff;
+  background-color: #2d96cd;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 35px;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  transition: background-color 500ms ease-in-out;
+  margin: 5px;
+  border: none;
+  display: flex;
+}
+#company-profile button.button-switch::after {
+  content: '';
+  margin: auto;
+  width: .5em;
+  height: .5em;
+  border-right: .1em solid #fff;
+  border-bottom: .1em solid #fff;
+  transform: rotate(-580deg);
+
+  display: inline-block;
+
+  transition: transform 1s ease-in-out;
+}
+#company-profile button.button-switch:hover {
+  color: #fff;
+  background-color: #1b394e;
+  text-decoration: none;
+}
+#company-profile button.button-switch.active::after {
+  transform: rotate(-45deg);
+  transition: transform 1s ease-in-out;
+}
+#company-profile div.sidebar-wrapper {
+  max-width: 280px;
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+
+}
+#company-profile div.sidebar-wrapper.active {
+  margin-left: -280px;
+}
+#company-profile div.wrapper {
+  padding: 0 89px 50px 89px;
+  margin-top: 2rem;
+}
+
+
+
+
+#company-profile .title-profile {
+  font-weight: 600;
+  font-size: 26px;
+  color: #2D3D4D;
+  display: inline-block;
+  margin: 0;
+
+}
+#company-profile .separator-row {
+  margin: 2rem 0 0 0;
+  padding: 0 80px;
+
+}
+#company-profile .separator{
+  border-top: 0.5px solid #ECF0F5;
+  box-sizing: border-box;
+  border-radius: 3px;
+
+}
+#company-profile div.form-part {
+  padding: 0!important;
+  background: #f0f4f761;
+}
+
+#company-profile .wrapper {
+  padding: 0 15px;
+  margin-bottom: 3rem;
+}
+
+#company-profile  div.right-part div.user-role {
+  padding: 0!important;
+}
+#company-profile div.rating-row {
+  margin: 0 -20px 2rem -20px;
+}
+#company-profile div.program-part {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#company-profile div.program-part div.head .title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2D3D4D;
+  margin-bottom: 1rem;
+}
+#company-profile div.program-part div.head  div.program-percent span.percent {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: right;
+  color: #0195FF;
+}
+#company-profile div.program-part div.content{
+  background: #FFFFFF;
+  border-radius: 5px;
+  height: 100%;
+  padding: 38px 45px;
+
+}
+#company-profile div.program-part div.content div.body p.description {
+  font-weight: 300;
+  font-size: 12px;
+  color: #75818C;
+}
+#company-profile div.program-part div.content div.body div.bar-holder {
+  margin: 30px 0 30px 0;
+}
+
+
+#company-profile .progress {
+  width: 100%;
+  height: 18px;
+
+}
+#company-profile .progress-wrap {
+  background: #0195FF;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+}
+#company-profile .progress-bar {
+  background: #ddd;
+  left: 0;
+  position: absolute;
+  top: 0;
+  border-radius:0 40px 40px 0;
+}
+#company-profile .bar-holder #steps-holder div.step  {
+  width: 25%;
+  height: 100%;
+  background: #0195FF;
+  display: flex;
+}
+#company-profile .bar-holder #steps-holder2 div.step  {
+  width: 25%;
+  height: 100%;
+  display: flex;
+}
+#company-profile .bar-holder #steps-holder div.step.active {
+  /*border-right: 2px solid goldenrod;*/
+}
+#company-profile .bar-holder #steps-holder div.step  span.step-circle {
+  margin: auto;
+  background: #AFCBDE;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: relative;
+}
+#company-profile .bar-holder #steps-holder div.step.active  span.step-circle {
+  background: #0072C4;
+}
+#company-profile .bar-holder #steps-holder2 div.step  span.step-circle {
+  margin: auto;
+}
+#company-profile .bar-holder #steps-holder div.step span.step-circle span.step-name {
+  position: absolute;
+  top: 22px;
+  font-weight: 500;
+  font-size: 11px;
+  color: #2D3D4C;
+}
+#company-profile .bar-holder #steps-holder2 div.step span.step-circle span.step-name {
+  top: 22px;
+  font-weight: 500;
+  font-size: 11px;
+  color: #2D3D4C;
+  text-align: center;
+}
+
+
+
+#company-profile div.rating-part {
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#company-profile div.rating-part div.content {
+  height: 100%;
+  background: #E5F5EC;
+  border-radius: 5px;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0;
+}
+#company-profile div.rating-part div.content .title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #2D3D4D;
+  text-align: center;
+}
+#company-profile div.rating-part div.content div.description-wrapper {
+  margin: 0 0 5px;
+  text-align: center;
+}
+#company-profile div.rating-part div.content div.description-wrapper span.description {
+  font-weight: 300;
+  font-size: 11px;
+  text-align: center;
+  color: #75818C;
+}
+#company-profile div.rating-part div.content div.description-wrapper span.description span.number {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#company-profile div.rating-part div.content div.rating-position div.circle {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 3px solid #32B94F;
+  display: flex;
+}
+
+#company-profile div.rating-part div.content div.rating-position div.circle span.rating {
+  color: #32B94F;
+  font-size: 32px;
+  font-weight: 500;
+  margin: auto;
+}
+
+#company-profile .certified-profession-item {
+  align-items: baseline;
+  padding-left: 0;
+  margin: 0 auto 40px;
+  max-width: 100%;
+}
+
+#company-profile div.right-part form div.insurance-group {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+#company-profile div.right-part form div.form-group span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #BEC9D2;
+  padding-left: 5px;
+}
+
+#certified-profession-picker p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #BEC9D2;
+  padding-left: 5px;
+}
+
+#company-profile #registrationForm h3 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2D3D4D;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: Poppins, sans-serif;
+}
+
+#company-profile #registrationForm .newsletter-holder h3 {
+  margin-top: 0;
+}
+
+#company-profile #registrationForm .newsletter-holder label {
+  font-size: 12px;
+  color: #2D3D4C;
+  line-height: 1.6rem;
+}
+
+#company-profile div.right-part form button.button-accept {
+  margin-top: 2em;
+}
+
+.registration-document_block {
+  padding: 17px;
+  height: auto;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  color: #2D3D4C;
+  border: 1px solid #ECEEF4;
+  border-radius: 4px;
+  text-align: center;
+  height: 50px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px dashed rgba(205, 218, 227, 0.46);
+  justify-content: center;
+  transition: box-shadow 0.4s ease-out;
+  cursor: pointer;
+  margin: 0;
+}
+
+#registration-document[type="file"] {
+  height: 0 !important;
+  overflow: hidden;
+  width: 0 !important;
+  padding: 0 !important;
+}
+
+#registration-document[type="file"] + label {
+  margin-bottom: 0;
+}
+@media (max-width: 1400px) {
+  #company-profile div.part-1 {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #company-profile div.wrapper {
+    padding: 5px 0.5rem;
+  }
+
+  #company-profile div.rating-row {
+    margin: 0 0 0.5em;
+  }
+
+  #company-profile div.program-part {
+    padding-right: 5px;
+    padding-left: 0;
+  }
+
+  #company-profile div.rating-part {
+    padding-right: 0;
+    padding-left: 5px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  #company-profile div.rating-part {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  #company-profile div.rating-row {
+    margin: 0 0 0.5rem 0;
+  }
+  #company-profile div.program-part {
+    padding: 0;
+  }
+  #company-profile div.rating-part {
+    padding: 0;
+  }
+
+}
+@media (max-width: 567px) {
+  #company-profile div.sidebar-wrapper {
+    position: absolute;
+    z-index: 1;
+    max-width: 100%;
+  }
+}
+@media (max-width: 415px) {
+  #company-profile div.program-part div.content {
+    padding: 45px 0.5rem;
+  }
+}
+
+
+

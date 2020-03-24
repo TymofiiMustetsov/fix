@@ -1,0 +1,569 @@
+#about div.part-1, #about div.part-7  {
+  background: #F7FAFC;
+}
+#about div.part-1 {
+  font-family: Poppins, sans-serif;
+  margin: 0 0 5rem 0;
+}
+#about div.part-1 div.left-part img{
+  max-width: 50vw;
+}
+#about div.part-1 div.right-part div.part-content {
+  margin: 9rem auto auto auto;
+  max-width: 400px;
+}
+#about div.part-1 div.right-part div.part-content .title {
+  font-weight: 600;
+  font-size: 48px;
+}
+#about div.part-1 div.right-part div.part-content .title span.blue-word {
+  color: #0195FF;
+}
+#about div.part-1 div.right-part div.part-content .title-description {
+  margin: 1rem auto 2.75rem auto;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #75818C;
+}
+#about div.part-1 div.right-part div.part-content button {
+  background: #0195FF;
+  border-radius: 2px;
+  color: white;
+  text-transform: uppercase;
+  padding: 22px 77px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+#about div.part-1 div.right-part  img.nut {
+  position: absolute;
+  bottom: -80px;
+  right: 100px;
+}
+
+
+
+#about div.part-3 {
+  font-family: Poppins, sans-serif;
+  margin: 7rem 0 6rem 0;
+  background: white;
+}
+#about div.part-3 .small-title {
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C0D2E1;
+}
+#about div.part-3 .title {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+  color: #2D3D4C;
+  margin-bottom: 1.5rem;
+}
+#about div.part-3 div.stores-line {
+  margin:2rem 0 3.5rem 0;
+}
+#about div.part-3 div.stores {
+  display: flex;
+}
+#about div.part-3 ul.nav-tabs {
+  border: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  min-width: 300px;
+}
+#about div.part-3 li.nav-item:first-child {
+  margin: 0 10px 0 auto;
+}
+#about div.part-3 li.nav-item:last-child {
+  margin: 0 auto 0 10px;
+}
+#about div.part-3 span.nav-link {
+  padding: 8px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid transparent;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #BED2E1;
+}
+#about div.part-3 span.nav-link.active {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid #0195FF;
+  color: #0195FF;
+}
+#about div.part-3 div.tab-content div.tab-pane p {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #75818C;
+}
+
+
+
+#about div.part-4 {
+  background: #F7FAFC;
+  margin: 2rem 0 80px 0;
+}
+#about div.part-4 div.top-part div.advantage{
+  padding: 73px 0;
+  height: 100%;
+  text-align: center;
+  background: #001D8F;
+  border: .5px solid #1733A5;
+}
+#about div.part-4 div.top-part div.advantage span.value {
+  font-weight: 600;
+  font-size: 44px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#about div.part-4 div.top-part div.advantage span.criteria{
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#about div.part-4 div.top-part div.background {
+  position: relative;
+}
+#about div.part-4 div.top-part div.background img{
+  width: 100%;
+}
+#about div.part-4 div.top-part div.darker {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgba(69, 82, 95, 0.49);
+  position: absolute;
+}
+#about div.part-4 div.top-part div.content {
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  top: 0;
+}
+#about div.part-4 div.top-part div.content-middle {
+  margin: auto;
+}
+#about div.part-4 div.top-part div.content-middle .title {
+  font-weight: 600;
+  font-size: 44px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 500px;
+  margin: auto;
+}
+#about div.part-4 div.top-part div.content-middle .title-description{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 350px;
+  margin: auto;
+}
+#about div.part-4 div.top-part div.content-middle button {
+  background: #FF5E00;
+  color: white;
+  padding: 22px 72px;
+  margin: 2rem auto 0 auto;
+}
+
+#about div.part-4 div.bot-part div.left-list,
+#about div.part-4 div.bot-part div.right-list{
+  max-width: 520px;
+  padding: 103px 0;
+  font-size: 14px;
+  color: #75818C;
+  line-height: 1.5rem;
+}
+#about div.part-4 div.bot-part div.left-list {
+  margin: auto 0 auto auto;
+}
+#about div.part-4 div.bot-part div.right-list {
+  margin: auto auto auto 0;
+}
+#about div.part-4 div.bot-part div.right-list ul {
+  list-style-image: url('/img/about/check-mark-for-list.svg');
+  line-height: 1.5rem;
+}
+
+
+
+
+#about div.part-6 {
+  padding: 0 120px 70px 120px;
+  margin: 0;
+}
+#about div.part-6 span.small-title {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C0D2E1;
+}
+#about div.part-6 h2.title {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+
+}
+#about div.part-6 .customer-card {
+  border: 1px solid #EBF2F7;
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease-out;
+  -webkit-box-shadow: -1px 2px 2px 0 rgba(181,181,181,1);
+  -moz-box-shadow: -1px 2px 2px 0 rgba(181,181,181,1);
+  box-shadow: -1px 2px 2px 0 rgba(181,181,181,1);
+}
+#about div.part-6 .customer-card:hover {
+  -webkit-box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+  -moz-box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+  box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+
+}
+#about div.part-6 .customer-card .customer-card-header{
+  padding: 20px 30px;
+  border-bottom: 1px solid #EBF2F7;
+}
+#about div.part-6 .customer-card .customer-card-body{
+  padding: 50px 46px;
+  text-align: center;
+}
+#about div.part-6 .customer-card .customer-card-header .customer-avatar {
+  width: 40px;
+  height: 40px;
+  background: #0195FF;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  margin-right: 10px;
+  /*background: #FF5E00;*/
+  /*background: #FFD553;*/
+}
+#about div.part-6 .customer-card .customer-card-header .customer-avatar.red {
+  background: #FF5E00;
+}
+#about div.part-6 .customer-card .customer-card-header .customer-avatar.yellow {
+  background: #FFD553;
+}
+#about div.part-6 .customer-card .customer-card-header .customer-avatar span.customer-name-letter {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: auto;
+  color: white;
+  font-family: Poppins-SemiBold, sans-serif;
+}
+#about div.part-6 .customer-card .customer-card-header .customer-avatar img {
+  position: absolute;
+  height: 100%;
+  display: none;
+}
+#about div.part-6 .customer-card .customer-card-header div.customer-location img{
+  height: 8px;
+  width: 6px;
+  margin: auto 0;
+}
+#about div.part-6 .customer-card .customer-card-header div.customer-location span {
+  margin: auto auto auto 5px;
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  color: #AFBAC6;
+}
+#about div.part-6 .customer-card .customer-card-header div.company-logo {
+  height: 100%;
+}
+#about div.part-6 .customer-card .customer-card-header div.company-logo img{
+  margin: auto 0 auto auto;
+  width: initial;
+}
+#about div.part-6 .customer-card .customer-card-header .customer-name {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2D3D4C;
+
+}
+#about div.part-6 .customer-card .customer-card-body .body-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2D3D4C;
+  margin-bottom: 15px;
+}
+#about div.part-6 .customer-card .customer-card-body .body-content {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #75818C;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+
+
+
+#about div.part-5 {
+  padding: 70px 120px 80px 120px;
+  margin: 0;
+  margin-bottom: 100px !important;
+}
+#about div.part-5  div.works-variety {
+  display: flex;
+  flex-flow: row wrap;
+  width: 1170px;
+  margin: auto;
+}
+#about div.part-5  div.works-variety div.work {
+  margin: 0 10px 10px 0; /* Some gutter */
+
+}
+#about div.part-5  div.works-variety div.work img {
+  transition: box-shadow 0.3s ease-out;
+}
+#about div.part-5  div.works-variety div.work:hover img {
+  -webkit-box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+  -moz-box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+  box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+}
+#about div.part-5  div.works-variety div.work:nth-child(2n) {
+  margin: 0;
+}
+#about div.part-5  div.works-variety img{
+
+}
+
+
+
+
+
+
+#about div.part-7 {
+
+}
+#about div.part-7 .section-left {
+  padding: 128px 0 115px 0;
+}
+#about div.part-7 .section-left  span.contacts-text {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C0D2E1;
+}
+#about div.part-7 .section-left .bottom-title {
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #2D3D4C;
+  margin-bottom: 20px;
+}
+#about div.part-7 .section-left div.contacts-block {
+  margin: 0 0 20px 0;
+}
+#about div.part-7 .section-left div.contacts-block span{
+  margin: 0 auto auto 14px;
+  max-width: 205px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2D3D4C;
+}
+#about div.part-7 .section-left div.contacts-block img {
+  margin: auto 0;
+}
+
+#about div.part-7 div.socials {
+  margin: 27px 0 auto 0;
+  width: 132px;
+}
+#about div.part-7 div.social-wrapper  {
+  margin: 0 9px 0 auto;
+}
+#about div.part-7 div.logos-holder img {
+  position: absolute;
+}
+#about div.part-7 img.engineer-idol {
+  height: 120%;
+  bottom: 0;
+  right: 0;
+}
+#about div.part-7 img.fixario-emblem {
+  width: 100%;
+  bottom: 0;
+}
+#about div.part-7 .block-right {
+  text-align: right;
+}
+#about div.part-7 .block-right img {
+  position: relative;
+  top: -50px;
+}
+
+
+@media (max-width: 1420px) {
+  #about div.part-5 {
+    padding: 70px 0 80px 0;
+  }
+}
+@media (max-width: 1365px) {
+  #about div.part-5  div.works-variety {
+    width: 90vw;
+  }
+}
+@media (max-width: 1300px) {
+  #about div.part-5  div.works-variety img{
+    width: 90vw;
+  }
+  #about div.part-5  div.works-variety div.work {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 1200px) {
+  #about div.part-7 .section-left {
+    padding: 128px 0 115px 120px;
+  }
+  #about div.part-1 div.right-part div.part-content{
+    margin: auto;
+  }
+  #about div.part-1 {
+    margin: 0 0 2rem 0;
+  }
+
+  #about div.part-4 div.bot-part div.left-list,
+  #about div.part-4 div.bot-part div.right-list{
+    margin: auto;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  #about div.part-4 div.bot-part div.right-list ul {
+    padding: 0;
+  }
+}
+@media (max-width: 991px) {
+  #about div.part-7 .section-left {
+    padding: 128px 2rem 120px 2rem;
+  }
+}
+@media (max-width: 978px) {
+  #about div.part-6 {
+    padding: 70px 0.5rem 100px;
+    margin: 0 1rem;
+  }
+  #about div.part-5{
+    padding: 70px 0;
+  }
+
+  #about div.part-7 .section-left {
+    padding: 0 2rem 2rem 2rem;
+  }
+  #about div.part-1 div.right-part  img.nut {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+  }
+  #about div.part-1 div.right-part div.part-content {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #about div.part-5 div.works-variety img {
+    width: 90vw;
+  }
+
+  #about div.part-6 .customer-card .customer-card-header{
+    padding: 20px 15px;
+  }
+  #about div.part-1 div.left-part img{
+    max-width: 100%;
+  }
+
+  #about div.part-1 div.right-part div.part-content .title {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  #about div.part-1 div.right-part div.part-content {
+    padding: 1rem 1.5rem;
+  }
+
+  #about div.part-1 div.right-part img.nut {
+    right: 0;
+  }
+  #about div.part-4 div.top-part div.content-middle .title {
+    font-size: 2rem;
+  }
+  #about div.part-4 div.top-part div.content-middle button {
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+  }
+  #about div.part-3 {
+    padding: 0 0.5rem;
+  }
+
+  #about div.terms-of-use {
+    margin: 0 0 2rem 0 ;
+  }
+  #about div.terms-of-use div.information {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 568px) {
+  #about div.part-4 div.top-part div.advantage {
+    padding: 1rem 0;
+  }
+  #about div.part-4 div.top-part div.content-middle button {
+    padding: 0.5rem 1rem;
+  }
+  #about div.part-4 div.bot-part div.right-list ul {
+    padding-left: 1.5rem;
+  }
+
+  #about div.part-2 div.accordion div.card div.card-body {
+    padding: 22px 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #about div.part-4 div.top-part div.content-middle .title {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

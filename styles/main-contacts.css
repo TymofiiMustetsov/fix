@@ -1,0 +1,606 @@
+#main-contacts div.main-contacts-holder {
+  min-height: 100vh;
+}
+#main-contacts div.right-part {
+  background: white;
+}
+#main-contacts div.right-part div.user-role {
+  padding: 30px 30px 0 30px;
+}
+#main-contacts div.right-part div.user-role a.back-button {
+  padding: 11px 23px;
+  background: #E6F3FC;
+  border-radius: 3px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0195FF;
+  border: none;
+  display: inline-flex;
+}
+#main-contacts div.right-part div.user-role a.back-button img.back-arrow {
+  margin: auto 0 auto auto;
+}
+#main-contacts div.right-part div.user-role a.back-button span {
+  margin: auto auto auto .5rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+
+#technician-profile #registrationForm h3,
+#technician-profile .insurance-label {
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2D3D4D;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: Poppins, sans-serif;
+}
+
+#tech_form #identity-card-block li {
+  list-style-type: none;
+}
+#tech_form #identity-card-block > ul {
+  align-items: center;
+  padding-left: 15px;
+}
+#tech_form #identity-card-block li p{
+  margin-bottom: 0;
+}
+#main-contacts div.right-part .title {
+  margin: 2.5rem 0 1.5rem;
+  text-align: center;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-size: 24px;
+  color: #2D3D4D;
+  font-weight: 600;
+}
+
+#main-contacts  div.right-part div.insurance-group input[type=checkbox] {
+  display: none;
+}
+
+#main-contacts div.right-part div.identity-card-block input.identity-card {
+  display: none;
+}
+#main-contacts  div.right-part div.form-group span.insurance-label {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  color: #2D3D4C;
+  margin: auto 0;
+  font-weight: 500;
+}
+#main-contacts  div.right-part div.gender-menu {
+  margin: auto 0 auto auto;
+
+}
+#main-contacts  div.right-part div.gender-menu button.gender-item {
+  padding: 10px 21px;
+  background: rgba(234, 235, 241, 0.36);
+  border-radius: 4px;
+  border: none;
+  margin: auto auto auto 8px;
+}
+
+
+#main-contacts div.right-part div.gender-menu  button.gender-item svg {
+  fill: #D9E1E9;
+  margin: auto 0 auto auto;
+}
+
+#main-contacts  div.right-part div.gender-menu  button.gender-item span{
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  align-items: center;
+  color: #9dcdfa;
+  margin: auto auto auto 7px;
+}
+
+
+#main-contacts  div.right-part input[type=checkbox]:checked + div.gender-menu  button.gender-item.yes,
+#main-contacts  div.right-part input[type=checkbox]:not(:checked) + div.gender-menu  button.gender-item.no{
+  background: #E6F3FC;
+}
+#main-contacts  div.right-part input[type=checkbox]:checked + div.gender-menu  button.gender-item.yes svg,
+#main-contacts div.right-part input[type=checkbox]:not(:checked) + div.gender-menu  button.gender-item.no svg{
+  fill: #3996FD;
+}
+#main-contacts  div.right-part input[type=checkbox]:checked + div.gender-menu  button.gender-item.yes span,
+#main-contacts  div.right-part input[type=checkbox]:not(:checked) + div.gender-menu  button.gender-item.no span{
+  color: #2D3D4D;
+}
+
+
+
+
+
+
+#main-contacts div.right-part div.form-part {
+  padding: 0 30%;
+  user-select: none;
+}
+
+#main-contacts div.right-part form div.form-group {
+  margin: 0 0 10px 0;
+}
+
+#main-contacts div.right-part form div.form-group span {
+  font-weight: 500;
+  font-size: 12px;
+  color: #BEC9D2;
+  padding-left: 5px;
+}
+
+#main-contacts div.right-part form div.form-group.nice-select-group span.current,
+#main-contacts div.right-part form div.form-group#certified-profession-picker span.current {
+  color: #2D3D4C;
+}
+
+#main-contacts div.right-part form .check-zip {
+  font-weight: 500;
+  font-size: 12px;
+  color: #BEC9D2;
+}
+
+#main-contacts div.right-part form div.form-group .btn span {
+  color: #fff;
+  padding-left: 0;
+}
+
+#main-contacts div.right-part form div.nice-select-group {
+  height: 90px;
+}
+
+#main-contacts div.right-part div.form-part form div#certified-profession-picker .title {
+  margin: 2.5rem 0 1.5rem;
+  text-align: center;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-size: 18px;
+  color: #2D3D4D;
+  font-weight: 600;
+}
+
+#main-contacts div.right-part div.form-part form div#certified-profession-picker ul.certified-profession-item {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#main-contacts div.right-part div.form-part form div#certified-profession-picker ul.certified-profession-item span {
+  font-weight: 500;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+#main-contacts div.right-part div.form-part form div#certified-profession-picker ul.certified-profession-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#main-contacts #certified-profession-picker ul.certified-profession-item li.item{
+  margin: auto;
+}
+#main-contacts div.right-part div.form-part form div#certified-profession-picker input.certificates-fil {
+  max-width: 250px;
+  margin: auto;
+}
+
+#main-contacts #certified-profession-picker div#add-certified-profession-item {
+  display: flex;
+  margin: 2em auto 0;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  width: 150px;
+  color: white;
+  background: #0195FF;
+  padding: 10px;
+}
+
+
+
+#main-contacts #certified-profession-picker label.uploadCertificate {
+ cursor: pointer;
+  margin: 0;
+}
+
+
+
+#main-contacts #certified-profession-picker div.delete-certified-profession-item  img.delete {
+  height: 30%;
+  cursor: pointer;
+}
+#main-contacts #certified-profession-picker div.delete-certified-profession-item  button{
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+}
+
+
+
+
+#main-contacts div.right-part form input:not(.nice-select-search) {
+  padding: 18px;
+  height: auto;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #2D3D4C;
+  border: 1px solid #ECEEF4;
+  border-radius: 4px;
+}
+
+#main-contacts div.right-part form input.certificates-file {
+  border: none;
+}
+
+
+#main-contacts div.right-part form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #A3AEBA;
+  opacity: 1; /* Firefox */
+}
+#main-contacts div.right-part form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #A3AEBA;
+}
+#main-contacts div.right-part form input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #A3AEBA;
+}
+#main-contacts div.right-part form div.form-group input.house-control,
+#main-contacts div.right-part form div.form-group input.apartment-control,
+#main-contacts div.right-part form div.form-group input.city-control.city-control,
+#main-contacts div.right-part form div.lastName {
+  margin-left: 10px;
+}
+
+
+#main-contacts div.right-part form div.profession-control{
+  width: 100%;
+}
+#main-contacts div.right-part form div.insurance-group{
+  margin-bottom: 20px;
+}
+
+#main-contacts div.right-part form div.form-group div.telephone-pay-message {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: right;
+  color: #2D3D4C;
+}
+
+
+#main-contacts div.right-part form div.file-upload-group {
+  display: flex;
+}
+#main-contacts div.right-part form div.file-upload-group div.left-part {
+
+}
+#main-contacts div.right-part form div.file-upload-group div.right-part {
+
+}
+
+
+#main-contacts div.right-part form div.avatar-img-block {
+  height: 190px;
+  background: white;
+  display: flex;
+  width: 100%;
+  border: 2px dashed rgba(205, 218, 227, 0.46);
+}
+
+
+
+#main-contacts div.right-part form div.avatar-img-block div.logo-sample-holder {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  background: transparent;
+  border-radius: 4px;
+}
+
+#main-contacts div.right-part form div.avatar-img-block div.logo-sample-holder img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#main-contacts div.right-part form div.file-upload-group div.img-load-controls {
+
+  margin: 10px 0 0 0;
+}
+#main-contacts div.right-part form div.file-upload-group div.img-load-controls a.delete-control {
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #BEC9D2;
+  text-decoration: none;
+  margin: auto auto auto 0;
+}
+#main-contacts div.right-part form div.file-upload-group div.img-load-controls label.upload-new {
+  text-decoration: none;
+  color: #0195FF;
+  margin: auto 0 auto auto;
+  cursor: pointer;
+}
+#main-contacts div.right-part form div.file-upload-group div.img-load-controls a.delete-control img {
+  margin: auto 0 auto auto ;
+}
+#main-contacts div.right-part form div.file-upload-group div.img-load-controls a.delete-control span {
+  margin: auto auto auto 7px ;
+}
+
+
+#main-contacts div.right-part form div.file-upload-group div.right-part div.certificate-name-block {
+  margin-bottom: 0.5rem;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  background: #F0F5F8;
+  border-radius: 4px;
+  color: #8DA1AC;
+  justify-content: space-between;
+  padding: 6px 12px;
+  display: inline-flex;
+}
+#main-contacts div.right-part form div.file-upload-group div.right-part div.certificate-name-block span{
+  margin: auto 0;
+}
+
+#main-contacts div.right-part form div.file-upload-group div.right-part div.certificate-name-block a {
+  margin: auto 0 auto 11px;
+}
+#main-contacts div.right-part form div.file-upload-group div.right-part div.certificate-name-block a img {
+  margin: auto;
+}
+
+
+#main-contacts div.right-part form div.form-group input.company-logo-block {
+  display: none
+}
+#main-contacts div.right-part form div.form-group label.custom-file-upload {
+  height: 190px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px dashed rgba(205, 218, 227, 0.46);
+  justify-content: center;
+  transition: box-shadow 0.4s ease-out;
+  cursor: pointer;
+  margin: 0 0 20px 0;
+}
+#main-contacts div.right-part form div.form-group label.custom-file-upload:hover {
+  -webkit-box-shadow: -5px 6px 12px -2px rgba(181,181,181,1);
+  -moz-box-shadow: -5px 6px 12px -2px rgba(181,181,181,1);
+  box-shadow: -5px 6px 12px -2px rgba(181,181,181,1);
+}
+#main-contacts div.right-part form div.form-group label.custom-file-upload img {
+  margin: auto auto 5px auto;
+}
+#main-contacts div.right-part form div.form-group label.custom-file-upload span.file-loader-title {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0195FF;
+  margin: 10px auto auto auto;
+}
+
+
+#main-contacts div.right-part form button.button-accept {
+  background: #0195FF;
+  border-radius: 3px;
+  width: 50%;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 1.5rem 0;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+#main-contacts div.nice-select {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  color: #2D3D4C;
+  border: 1px solid #ECEEF4;
+  border-radius: 4px;
+  display: flex;
+}
+
+
+#main-contacts div.nice-select:not(.has-multiple) {
+  padding: 18px 25px 18px 18px;
+  line-height: 0;
+  height: 56px;
+}
+
+#main-contacts div.time-matters-control {
+  background-color: #F7FAFC!important;
+}
+
+
+#main-contacts div.nice-select span.current {
+  margin: auto auto auto 0;
+  color: #A3AEBA;
+}
+
+
+#main-contacts div.time-matters-control span.current {
+  color: #2D3D4C;
+}
+#main-contacts div.time-matters-control span.current:after {
+  content: url("../../assets/img/signup-customer/matters-info-sign.svg") ;
+  margin-left: 5px;
+  position: absolute;
+  top: calc(50% - 7px);
+}
+
+
+#main-contacts div.nice-select:not(.has-multiple) ul.list li.option:first-child {
+  display: none;
+  height: 0;
+}
+
+#main-contacts div.nice-select:after {
+  border-color: #435D75;
+}
+
+#main-contacts .identityUrl {
+  text-align: center;
+  display: block;
+}
+
+
+/*.identity-card_block {*/
+/*  padding: 17px;*/
+/*  height: auto;*/
+/*  font-family: Poppins, sans-serif;*/
+/*  font-size: 12px;*/
+/*  color: #2D3D4C;*/
+/*  border: 1px solid #ECEEF4;*/
+/*  border-radius: 4px;*/
+/*  text-align: center;*/
+/*  height: 50px;*/
+/*  background: white;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  width: 100%;*/
+/*  border: 2px dashed rgba(205, 218, 227, 0.46);*/
+/*  justify-content: center;*/
+/*  transition: box-shadow 0.4s ease-out;*/
+/*  cursor: pointer;*/
+/*  margin: 0;*/
+/*  max-width: 160px;*/
+/*  margin: 0 auto;*/
+/*  text-align: center;*/
+/*}*/
+
+/*.identity-card_block label,*/
+/*.certificates-file_block label,*/
+/*.certificates-file_block label {*/
+/*  margin-bottom: 0;*/
+/*}*/
+
+/*#identity-card[type="file"],*/
+/*#certificates-file[type="file"],*/
+/*#certificates-file[type="file"] {*/
+/*  height: 0 !important;*/
+/*  overflow: hidden;*/
+/*  width: 0 !important;*/
+/*  padding: 0 !important;*/
+/*}*/
+
+
+.upload-file_block {
+  align-items: center;
+}
+
+#certified-profession-picker .upload-file_block {
+  margin-left: 20px;
+}
+
+.upload-file_block > [type='file'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.upload-file_block > .button {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 8px;
+  border-radius: 4px;
+  border: 2px dashed rgba(205, 218, 227, 0.46);
+  background: white;
+  transition: box-shadow 0.4s ease-out;
+  padding: 17px;
+  max-width: 160px;
+  width: 100%;
+  text-align: center;
+  color: #2D3D4C;
+
+}
+
+
+.upload-file_block > .label {
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: .3;
+}
+
+.upload-file_block.-chosen > .label {
+  opacity: 1;
+  color: #495057 !important;
+}
+
+.certificates-file_block,
+.certificates-file_block {
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  #main-contacts div.right-part div.form-part {
+    padding: 0 1rem;
+  }
+
+  #jstree_div {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-contacts div.right-part div.form-part form div#certified-profession-picker input.certificates-fil {
+    margin: auto auto auto 0;
+  }
+  #main-contacts div.right-part form button.button-accept  {
+    margin-bottom: 0.5rem
+  }
+  #main-contacts div.right-part form div.form-group.agree-rules-block {
+    margin: 0.75rem 0;
+  }
+  #main-contacts div.right-part div.have-account-block {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #main-contacts div.right-part .title {
+    margin: 0.5rem 0;
+  }
+  #main-contacts div.right-part div.user-role {
+    padding: 0.5rem 0.5rem 0 0.5rem;
+  }
+  #main-contacts div.right-part  div.gender-menu {
+    padding: 0;
+  }
+
+  #main-contacts div.right-part form div.file-upload-group div.img-load-controls a.delete-control,
+  #main-contacts div.right-part form div.file-upload-group div.img-load-controls label.upload-new {
+    margin: auto;
+  }
+}

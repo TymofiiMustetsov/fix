@@ -1,0 +1,271 @@
+#signup-customer div.sign-up-holder {
+  height: 100vh;
+}
+#signup-customer div.left-part {
+  background: #eff0f3;
+  height: 100%;
+}
+
+
+#signup-customer div.left-part div.top-part {
+  padding: 68px 0 38px 0;
+}
+#signup-customer div.left-part div.middle-part {
+  display: flex;
+}
+#signup-customer div.left-part div.middle-part div.background-holder {
+  position: relative;
+}
+
+
+#signup-customer div.left-part div.middle-part img.personal-area {
+  position: absolute;
+  top: 35px;
+  left: 107px;
+}
+#signup-customer div.left-part div.bottom-part {
+  padding: 35px 0 53px 0;
+}
+#signup-customer div.left-part div.bottom-part div.socials-wrapper {
+  flex-direction: row;
+  text-align: center;
+}
+#signup-customer div.left-part div.bottom-part button.socials {
+  display: inline-block;
+  border-radius: 5px;
+  outline: none;
+  padding: 0;
+  margin: 5px;
+}
+#signup-customer div.left-part div.bottom-part button.socials.google-button {
+  width: 194px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: capitalize;
+  display: inline-flex;
+  background: #F14336;
+}
+#signup-customer div.left-part div.bottom-part button.socials.google-button span {
+  margin: auto auto auto 7px;
+}
+#signup-customer div.left-part div.bottom-part button.socials.google-button img {
+  margin: auto 0 auto auto;
+}
+
+#signup-customer div.right-part {
+  background: white;
+}
+#signup-customer div.right-part div.user-role {
+  padding: 30px 30px 0 30px;
+}
+#signup-customer div.right-part div.user-role a.role-switch {
+  padding: 11px 17px;
+  background: #E6F3FC;
+  border-radius: 3px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0195FF;
+  border: none;
+  cursor: pointer;
+}
+#signup-customer div.right-part .title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-size: 24px;
+  color: #2D3D4D;
+  font-weight: 600;
+}
+#signup-customer div.right-part div.gender-menu {
+  padding: 0 3rem;
+  margin-bottom: 20px;
+}
+#signup-customer div.right-part div.gender-menu button.gender-item {
+  padding: 10px 21px;
+  background: rgba(234, 235, 241, 0.36);
+  border-radius: 4px;
+  border: none;
+  margin: auto 8px;
+}
+#signup-customer div.right-part div.gender-menu  button.gender-item.selected {
+  background: #E6F3FC;
+}
+#signup-customer div.right-part div.gender-menu  button.gender-item svg {
+  fill: #D9E1E9;
+  margin: auto 0 auto auto;
+}
+#signup-customer div.right-part div.gender-menu  button.gender-item.selected svg {
+  fill: #3996FD;
+}
+#signup-customer div.right-part div.gender-menu  button.gender-item span{
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  align-items: center;
+  color: #2D3D4D;
+  margin: auto auto auto 7px;
+}
+#signup-customer div.right-part div.form-part {
+  padding: 0 155px;
+  user-select: none;
+
+}
+
+
+#signup-customer div.right-part form div.form-group {
+  margin-bottom: 10px;
+}
+#signup-customer div.right-part form div.form-group.password-group {
+  position: relative;
+}
+
+#signup-customer div.right-part form div.last-name {
+  margin: 0 0 auto 10px;
+}
+#signup-customer div.right-part form div.form-group label.error,
+#signup-customer div.right-part form div.form-group div.error{
+  color: #e3564b;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+
+#signup-customer div.right-part form div.form-group .eye-password {
+  position: absolute;
+  right: 1rem;
+  top: 24px;
+  z-index: 2;
+  fill: #DADADA;
+}
+#signup-customer div.right-part form div.form-group .eye-password:hover {
+  cursor: pointer;
+}
+#signup-customer div.right-part form input {
+  padding: 18px;
+  height: auto;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  color: #2D3D4C;
+  border: 1px solid #ECEEF4;
+  border-radius: 4px;
+}
+#signup-customer div.right-part form input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #A3AEBA;
+  opacity: 1; /* Firefox */
+}
+#signup-customer div.right-part form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #A3AEBA;
+}
+#signup-customer div.right-part form input::-ms-input-placeholder { /* Microsoft Edge */
+  color: #A3AEBA;
+}
+
+
+#signup-customer div.right-part form div.accept-rules-holder {
+  display: flex;
+}
+#signup-customer div.right-part form div.form-group.agree-rules-block {
+  margin: 6px auto 1rem auto;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#signup-customer div.right-part form div.form-group.agree-rules-block label.error {
+  display: block;
+  color: #e3564b;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#signup-customer div.right-part form div.form-group.agree-rules-block .custom-control-input:checked~.custom-control-label::before{
+  background: #0195FF;
+  border-color: #0195FF;
+}
+#signup-customer div.right-part form div.form-group.agree-rules-block label {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  color: #A3AEBA;
+  line-height: 1.5rem;
+}
+#signup-customer div.right-part form div.form-group.agree-rules-block label a,
+#signup-customer div.right-part form div.have-account-block a{
+  text-decoration: none;
+}
+#signup-customer div.right-part form button.button-accept {
+  background: #0195FF;
+  border-radius: 3px;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 19px 0;
+  margin-bottom: 2rem;
+}
+#signup-customer div.right-part form div.have-account-block {
+  text-align: center;
+}
+#signup-customer div.right-part form div.have-account-block a {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  color: #0195FF;
+}
+
+
+
+@media (max-width: 768px) {
+
+  #signup-customer div.sign-up-holder {
+    height: auto;
+  }
+
+  #signup-customer div.left-part div.top-part {
+    padding: 0.5rem 0 0;
+  }
+
+  #signup-customer div.left-part div.bottom-part {
+    padding: 1rem 0;
+  }
+
+  #signup-customer div.left-part div.bottom-part div.socials-wrapper {
+    flex-direction: column;
+  }
+
+  #signup-customer div.right-part .title {
+    margin: 1rem 0 1rem 0;
+  }
+
+  #signup-customer div.right-part div.user-role {
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  #signup-customer div.right-part  div.gender-menu {
+    padding: 0;
+  }
+
+  #signup-customer div.right-part div.form-part {
+    padding: 0 0.5rem;
+  }
+  #signup-customer div.right-part form button.button-accept  {
+    margin-bottom: 0.5rem
+  }
+}
+
+@media (max-width: 568px) {
+  #signup-customer div.left-part div.middle-part {
+    display: none;
+  }
+}

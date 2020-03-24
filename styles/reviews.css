@@ -1,0 +1,295 @@
+div#reviews div.part-1 {
+  padding: 75px 120px;
+  margin: 0;
+}
+div#reviews div.part-1 .title {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  color: #2D3D4D;
+  margin-bottom: 3rem;
+}
+div#reviews div.part-1 .customer-card {
+  border: 1px solid #EBF2F7;
+  box-sizing: border-box;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease-out;
+  /*  -webkit-box-shadow: -1px 2px 2px 0 rgba(181,181,181,1);
+    -moz-box-shadow: -1px 2px 2px 0 rgba(181,181,181,1);
+    box-shadow: -1px 2px 2px 0 rgba(181,181,181,1);*/
+  max-width: 360px;
+  margin: auto;
+}
+div#reviews div.part-1 .customer-card:hover {
+  -webkit-box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+  -moz-box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+  box-shadow: -11px 12px 25px -5px rgba(181,181,181,1);
+
+}
+div#reviews div.part-1 .customer-card .customer-card-header{
+  padding: 20px 30px;
+  border-bottom: 1px solid #EBF2F7;
+}
+div#reviews div.part-1 .customer-card .customer-card-body{
+  padding: 50px 46px;
+  text-align: center;
+}
+div#reviews div.part-1 .customer-card .customer-card-header .customer-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 20px);
+}
+div#reviews div.part-1 .customer {
+  margin-bottom: 3rem;
+  padding: 0;
+
+}
+
+div#reviews div.part-1 .customer:nth-child(n) .customer-card-header .customer-avatar {
+  background: #0195FF;
+}
+div#reviews div.part-1 .customer:nth-child(3n) .customer-card-header .customer-avatar {
+  background: #FFD553;
+}
+div#reviews div.part-1 .customer:nth-child(2n) .customer-card-header .customer-avatar {
+  background: #FF5E00;
+}
+div#reviews div.part-1 .customer:nth-child(4n) .customer-card-header .customer-avatar {
+  background: #74e387;
+}
+
+
+div#reviews div.part-1 .customer-card .customer-card-header .customer-avatar.red {
+  background: #FF5E00;
+}
+div#reviews div.part-1 .customer-card .customer-card-header .customer-avatar.yellow {
+  background: #FFD553;
+}
+div#reviews div.part-1 .customer-card .customer-card-header .customer-avatar span.customer-name-letter {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: auto;
+  color: white;
+  font-family: Poppins-SemiBold, sans-serif;
+}
+div#reviews div.part-1 .customer-card .customer-card-header .customer-avatar img {
+  position: absolute;
+  height: 100%;
+  display: none;
+}
+
+div#reviews div.part-1 .customer-card .customer-card-header .customer-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+div#reviews div.part-1 .customer-card .customer-card-header div.customer-location {
+  display: flex;
+  justify-content: center;
+}
+div#reviews div.part-1 .customer-card .customer-card-header div.customer-location img{
+  height: 8px;
+  width: 6px;
+  margin: auto 0;
+}
+div#reviews div.part-1 .customer-card .customer-card-header div.customer-location span {
+  margin-left:5px;
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  color: #AFBAC6;
+}
+div#reviews div.part-1 .customer-card .customer-card-header .customer-name {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2D3D4C;
+
+}
+
+div#reviews div.part-1 .customer-card .customer-card-body .body-title {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2D3D4C;
+  margin-bottom: 15px;
+}
+div#reviews div.part-1 .customer-card .customer-card-body .body-content {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #75818C;
+  margin-bottom: 18px;
+  display: inline-block;
+  max-width: 275px;
+}
+div#reviews div.part-1 .customer-card .customer-card-body .customer-images {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+}
+div#reviews div.part-1 .customer-card .customer-card-body div.image-holder {
+  display: flex;
+
+}
+div#reviews div.part-1 .customer-card .customer-card-body div.image-holder:nth-child(2n) {
+  margin: 0 10px;
+}
+div#reviews div.part-1 .customer-card .customer-card-body .customer-images img{
+  margin: auto;
+}
+
+div#reviews div.part-1 div#pager1 {
+user-select: none;
+  display: flex;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+div#reviews div.part-1 div#pager1 div[class*="motypc"] {
+  display: flex;
+  margin: auto;
+}
+
+
+div#reviews div.part-1 div#pager1 span {
+
+  font-size: 36px;
+  line-height: 22px;
+  background: transparent;
+  border-radius: 50%;
+  padding: 16px;
+  height: auto;
+  width: 30px;
+  box-sizing: unset;
+}
+div#reviews div.part-1 div#pager1 a{
+  color: black;
+  width: 30px;
+  padding: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 14px;
+}
+div#reviews div.part-1 div#pager1 a:first-child,
+div#reviews div.part-1 div#pager1 a:last-child{
+  font-size: 36px;
+  line-height: 22px;
+  border-radius: 50%;
+  padding: 16px;
+  transition: background-color 0.15s linear;
+  color: #86A3BE;
+}
+
+
+div#reviews div.part-1 div#pager1 a:first-child:hover ,
+div#reviews div.part-1 div#pager1 a:last-child:hover {
+  background: rgba(161, 175, 178, 0.06);
+
+}
+
+div#reviews div.part-1 div#pager1 a[class*="active"] {
+  color: #0195FF;
+}
+
+
+
+div#reviews  div.part-3, div.part-2  {
+  background: #F7FAFC;
+}
+
+
+
+
+div#reviews div.part-2 {
+  max-height: 350px;
+}
+
+div#reviews div.part-2 img.right-img {
+  transform: translateY(80px);
+}
+div#reviews div.part-2 div.controls-line {
+  max-width: 480px;
+  margin: 2rem auto;
+}
+div#reviews div.part-2 div.controls-line div {
+  padding: 0 10px;
+}
+div#reviews div.part-2 button.btn-signUp {
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  width: 210px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #FFFFFF;
+  margin: auto;
+  background: #0195FF;
+  letter-spacing: 0.06em;
+}
+div#reviews div.part-2 button.btn-show {
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+  width: 210px;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  color: #0195FF;
+  border: 3px solid rgba(182, 210, 230, 0.2);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin: auto;
+  letter-spacing: 0.06em;
+}
+div#reviews div.part-2 .section-1 {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+
+}
+div#reviews div.part-2 .section-1 .title {
+  color: #2D3D4D;
+  font-weight: 600;
+  font-size: 40px;
+}
+div#reviews div.part-2 p.them {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: #75818C;
+  margin: 0  auto 1.25rem;
+  max-width: 450px;
+}
+
+
+
+@media (max-width: 1200px) {
+  #home-page div.part-2 .section-1 {
+    margin: 2rem auto 0 auto;
+  }
+  #home-page  div.part-2 .section-1 .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  div#reviews div.part-1 {
+    padding: 75px 2rem;
+  }
+}
+
+@media (max-width: 568px) {
+  div#reviews div.part-1 {
+    padding: 75px 0;
+  }
+}

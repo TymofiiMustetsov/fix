@@ -1,0 +1,977 @@
+#requests {
+  background: #f7fafc;
+}
+
+
+
+
+#requests div.top-separator {
+  background: #EBF2F7;
+  height: 1px;
+}
+#requests div.sidebar-switch-block {
+  background: #f7fafc;
+}
+#requests button.button-switch {
+  color: #fff;
+  background-color: #2d96cd;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 35px;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  transition: background-color 500ms ease-in-out;
+  margin: 5px;
+  border: none;
+  display: flex;
+}
+#requests button.button-switch::after {
+  content: '';
+  margin: auto;
+  width: .5em;
+  height: .5em;
+  border-right: .1em solid #fff;
+  border-bottom: .1em solid #fff;
+  transform: rotate(-580deg);
+
+  display: inline-block;
+
+  transition: transform 1s ease-in-out;
+}
+#requests button.button-switch:hover {
+  color: #fff;
+  background-color: #1b394e;
+  text-decoration: none;
+}
+#requests button.button-switch.active::after {
+
+  transform: rotate(-45deg);
+  transition: transform 1s ease-in-out;
+}
+#requests div.sidebar-wrapper {
+  max-width: 280px;
+  transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+
+}
+#requests div.sidebar-wrapper.active {
+  margin-left: -280px;
+}
+#requests div.wrapper {
+  padding: 29px 80px;
+  background: #f7fafc;
+}
+
+
+
+
+
+
+
+
+
+
+
+#requests div.part-1{
+  padding: 20px 89px 0;
+  font-family: Poppins, sans-serif;
+}
+#requests div.part-1 .title{
+  font-weight: 600;
+  font-size: 26px;
+  color: #2D3D4D;
+  display: inline-block;
+  margin: 0;
+}
+#requests div.part-1  span.options-label {
+  font-weight: 500;
+  font-size: 12px;
+  color: #2D3D4C;
+}
+#requests div.part-1 .separator-row {
+  margin-top: 2rem;
+}
+#requests div.part-1 .separator{
+  border-top: 0.5px solid #ECF0F5;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+#requests div.part-1 div.select-wrapper {
+  margin: auto 0 auto auto;
+}
+/*------------Custom select-------------------*/
+#requests .custom-select-wrapper {
+  position: relative;
+  user-select: none;
+  width: 150px;
+}
+#requests .custom-select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*border-width: 0 2px 0 2px;
+  border-style: solid;
+  border-color: #394a6d;*/
+  height: 100%;
+  padding: 0;
+  border: none;
+}
+#requests .custom-select__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #AFBAC6;
+  /*height: 60px;*/
+  /*line-height: 60px;*/
+  background: #f7fafc;
+  cursor: pointer;
+  border: none;
+
+  /*border-width: 2px 0 2px 0;
+  border-style: solid;
+  border-color: #394a6d;*/
+}
+#requests .custom-options {
+  position: absolute;
+  display: block;
+  top: calc(100% + 20px);
+  left: 0;
+  right: 0;
+  border: 1px solid #e1e8ec;
+  /*border: 2px solid #394a6d;
+  border-top: 0;*/
+
+  background: #fff;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+#requests .custom-select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+#requests .custom-option {
+  position: relative;
+  display: block;
+  padding: 0 22px 0 22px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #3b3b3b;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+}
+#requests .custom-option:hover {
+  cursor: pointer;
+  background-color: #b2b2b2;
+}
+#requests .custom-option.selected {
+  color: #ffffff;
+  background-color: #305c91;
+}
+#requests .arrow {
+  position: relative;
+  height: 7px;
+  width: 7px;
+}
+#requests .arrow::before, .arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 100%;
+  transition: all 0.5s;
+}
+#requests .arrow::before {
+  left: -2px;
+  transform: rotate(-45deg);
+  background-color: #435D75;
+}
+#requests .arrow::after {
+  left: 2px;
+  transform: rotate(45deg);
+  background-color: #435D75;
+}
+#requests .open .arrow::before {
+  left: -2px;
+  transform: rotate(45deg);
+}
+#requests .open .arrow::after {
+  left: 2px;
+  transform: rotate(-45deg);
+}
+/*------------Custom select end-------------------*/
+
+
+
+#requests div.part-2 {
+  padding: 0 89px 100px 89px;
+}
+
+#requests div.part-2 div.no-requests {
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  max-width: 320px;
+  text-align: center;
+  margin: auto;
+  display: none;
+}
+
+#requests div.part-2 div.is-requests {
+  padding: 2rem 0 0 0;
+}
+
+#requests div.part-2 div.no-requests .title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #2D3D4D;
+  margin-bottom: 1rem;
+}
+#requests div.part-2 div.no-requests {
+
+}
+#requests div.part-2 div.no-requests .message {
+  font-weight: 300;
+  font-size: 14px;
+  color: #75818C;
+  margin-bottom: 2rem;
+}
+#requests div.part-2 div.no-requests a.btn-transparent {
+  margin: auto;
+  font-family: Poppins-SemiBold, sans-serif;
+  font-weight: 600;
+  width: 190px;
+  height: 56px;
+  border: 2px solid #0195FF;
+  border-radius: 2px;
+  font-size: 12px;
+  color: #0195FF;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  display: flex;
+}
+
+
+#requests div.part-2 div.accordion div.card {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 15px rgba(230, 237, 241, 0.46);
+  margin-bottom: 1rem;
+  border: none;
+  font-family: Poppins, sans-serif;
+  border-radius: 4px;
+}
+#requests div.part-2 div.accordion div.card div.card-header {
+  background: #FFFFFF;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid #F5F7F9;
+  padding: 0 1rem 0 0 ;
+  display: flex;
+  position: relative;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.red-corner {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px;
+  border-color: #FF5E00 transparent transparent #FF5E00;
+  float: left;
+  border-radius: 4px 0px 0px 0px;
+
+}
+#requests div.part-2 div.table-head-row {
+  padding: 0 32px 0 0 ;
+  font-size: 11px;
+
+  display: flex;
+}
+#requests div.part-2 span.table-head {
+  color: #AFBAC6;
+}
+#requests div.part-2 div.table-head-row div.spacer-tab-header {
+  width: 36px;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper,
+#requests div.part-2 div.table-head-row div.column-wrapper
+{
+  padding: 20px 0 20px 35px;
+}
+
+#requests div.part-2 div.accordion div.card div.card-header div.border-wrapper {
+  padding: 1rem 0;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.border-wrapper div.border-spacer {
+
+  width: 0.5px;
+  background: #E6EDF1;
+  height: 100%;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.table-head{
+  display: none;
+}
+#requests div.part-2 div.accordion div.card div.card-header span{
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  margin: auto auto auto 0;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  margin: auto auto auto 0;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.pendings {
+  background: #EDE7FF;
+  border-radius: 2px;
+  padding: 6px 10px;
+  font-weight: 500;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #A07EFF;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.paused {
+  background: rgba(255, 242, 124, 0.32);
+  padding: 6px 11px;
+  color: #BBB645;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 9px;
+  text-transform: uppercase;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span img.check-mark {
+  display: none;
+}
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.finished {
+  color: #AFB9C4;
+  padding: 6px 9px;
+  font-size: 9px;
+  background: #F2F7FB;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+
+}
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.finished img.check-mark  {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.accepted {
+  color: #AFB9C4;
+  padding: 6px 9px;
+  font-size: 9px;
+  background: #F2F7FB;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+#requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.started {
+  color: #AFB9C4;
+  padding: 6px 9px;
+  font-size: 9px;
+  background: #bae4fc;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+#requests div.part-2 div.accordion div.card div.card-header button {
+  background: white;
+  border: 1px solid #EAF2F8;
+  border-radius: 3px;
+  padding: 12px;
+  margin: auto 0 auto auto ;
+  text-decoration: none;
+  display: flex;
+}
+#requests div.part-2 div.accordion div.card div.card-header  button:not(.collapsed) {
+  background: #EAF2F8;
+  border-color: transparent;
+}
+#requests div.part-2 div.accordion div.card div.card-header  button img {
+  margin: auto;
+  transition: all 0.15s ease-in;
+}
+#requests div.part-2 div.accordion div.card div.card-header  button.collapsed img {
+  transform: rotate(-180deg);
+}
+#requests div.part-2 div.accordion div.card div.card-header  button:not(.collapsed) img {
+  transform: rotate(0);
+}
+#requests div.part-2 div.accordion div.card div.card-body {
+  font-size: 12px;
+  color: #2F3739;
+  padding: 40px 20px;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body .title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2D3D4D;
+  margin-left: 2rem;
+}
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.rating {
+  border: 1px solid #F5F7F9;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 33px 2rem 26px 2rem;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.info div.avatar-block {
+  margin-right: 1rem;
+  border-radius: 4px;
+  display: flex;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.info div.avatar-block img {
+  border-radius: 4px;
+  margin: auto 0;
+  max-height: 50px;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.info div.name-block{
+
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.info div.name-block span.tech-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2D3D4D;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.value{
+  margin-top: 22px;
+  padding: 18px 19px;
+  border: 0.5px solid #EBEEF0;
+  border-radius: 4px;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.value span.label{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #2D3D4D;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.value span.amount{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #2D3D4D;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.value span.amount img {
+  margin-right: 5px;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.value span.position {
+  color: #AFBAC6;
+  margin-left: 5px;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.job-type {
+  font-size: 12px;
+  color: #788795;
+  background: #EFF5F9;
+  border-radius: 4px;
+  margin-right: 6px;
+  display: flex;
+  height: 30px;
+  min-width: 80px;
+  width: 80px;
+  padding: 0 5px;
+  overflow: hidden;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.job-type span {
+  white-space: nowrap ;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.job-type:hover {
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  cursor: pointer;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.job-type:hover span {
+  white-space: inherit;
+}
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.rating div.price {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #FF5E00;
+  border-radius: 4px;
+  height: 30px;
+  width: 56px;
+  display: flex;
+  padding: 5px;
+  margin: auto 0;
+}
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.details {
+  margin-top: 34px;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block {
+  border: 1px solid #F5F7F9;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 21px;
+
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block div.info {
+  max-height: 120px;
+  overflow-y: scroll;
+  padding-right: 24px;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block div.info::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(182, 210, 230, 0.2);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block div.info::-webkit-scrollbar
+{
+  width: 4px;
+  background-color: #F5F5F5;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block div.info::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 2px rgba(182, 210, 230, 0.2);
+  background-color: #0195FF;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block div.col-6 {
+  padding: 0 10px 10px 0;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block div.info-block {
+  background: #F7FAFC;
+  border-radius: 10px;
+  padding: 12px 0 12px 20px ;
+  width: 100%;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block div.info-block span.name {
+  font-weight: 500;
+  font-size: 11px;
+  color: #2D3D4C;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.details div.details-block div.info-block span.value {
+  font-size: 12px;
+  color: #788795;
+}
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.history {
+  background: #F7FAFC;
+  border-radius: 15px;
+  padding: 30px 35px;
+  user-select: none;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item {
+  margin: 34px 0 ;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item:first-child {
+  margin: 0;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.item-title {
+  margin-bottom: 21px;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history .date {
+  font-weight: 600;
+  font-size: 12px;
+  color: #BBC6CF;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history span.time{
+  font-size: 12px;
+  color: #2D3D4C;
+  margin: auto 0;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.history span.chain-link{
+  text-align: center;
+  min-height: 29px;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 25px;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history span.chain-link:before {
+  content: '';
+  width: 0;
+  height: 100%;
+  position: absolute;
+  border: 0.5px solid #E5EEF5;
+  top: 0;
+  left:  calc(50% - 0.5px);
+}
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.history span.chain-link:after {
+  left:  calc(50% - 3.5px);
+  top: calc(50% - 3.5px);
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #E5EEF5;
+  position: absolute;
+
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.switch-line[data-toggle="collapse"] {
+  cursor: pointer;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.history div.switch-line[data-toggle="collapse"]:hover span.chain-link:after,
+#requests div.part-2 div.accordion div.card div.card-body div.history div.switch-line[data-toggle="collapse"]:hover + div.switch-line span.chain-link:after
+{
+  background-color: #0195FF;
+}
+
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.history  div.switch-line[aria-expanded="true"] span.chain-link:after {
+  background-color: #0195FF;
+}
+
+
+/*#requests div.part-2 div.accordion div.card div.card-body div.history div.work-accepted div.switch-line[aria-expanded="true"] span.chain-link:after {
+  top: 41.5px;
+}*/
+#requests div.part-2 div.accordion div.card div.card-body div.history  div.switch-line[aria-expanded="true"] span.time {
+  color: #0195FF;
+}
+
+
+/*#requests div.part-2 div.accordion div.card div.card-body div.history div.work-accepted div.switch-line[aria-expanded="true"] span.time {
+
+  margin-top: 36px;
+}*/
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.history  span.event {
+  margin: auto 0;
+  font-weight: 600;
+  font-size: 12px;
+  color: #2D3D4D;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active {
+  padding: 22px 0;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active.collapsing + span.event,
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active.show + span.event
+
+{
+  display: none;
+
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active button.confirm-work {
+  background: #0195FF;
+  border: 2px solid #0195FF;
+  border-radius: 6px;
+  padding: 14px 0;
+  width: 232px;
+  display: flex;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active a.write-review {
+  background: #0195FF;
+  border: 2px solid #0195FF;
+  border-radius: 6px;
+  width: 160px;
+  font-size: 12px;
+  padding: 9px 0;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active button.review-accepted {
+  background: #C1D1DD;
+  border: 2px solid #C1D1DD;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  width: 188px;
+  padding: 9px 0;
+}
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.work-finished div.history-item-active div.message img {
+  margin-right: 10px;
+}
+#requests div.part-2 div.accordion div.card div.card-body div.history div.work-finished div.history-item-active div.message span {
+  font-weight: 600;
+  font-size: 12px;
+  color: #00A046;
+  margin-top: 22px;
+}
+
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active button.confirm-work img {
+  margin: auto 5px auto auto;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active button.confirm-work span {
+  margin: auto auto auto 5px;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  color: #FFFFFF;
+  line-height: 14px;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active div.message {
+  font-size: 12px;
+  align-items: center;
+  text-align: center;
+  color: #A2B6CA;
+  margin: 10px 0;
+}
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.work-finished div.history-item-active div.message {
+  text-align: left;
+  margin: 22px 0 0;
+}
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active div.code {
+  color: #2D3D4D;
+  margin: 0 0 14px 0;
+  text-align: center;
+  font-weight: 600;
+
+}
+
+
+#requests div.part-2 div.accordion div.card div.card-body div.history div.history-item-active button.button-delay {
+  background: none;
+  border: 3px solid rgba(182, 210, 230, 0.2);
+  padding: 12px;
+  width: 232px;
+  color: #0195FF;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  display: flex;
+}
+
+
+
+
+
+.modal#writeReviewAboutTechnican a.close {
+  position: absolute;
+  right: 22px;
+  top: 17px;
+  padding: 0;
+}
+.modal#writeReviewAboutTechnican div.top-part {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.modal#writeReviewAboutTechnican div.top-part img.tech-avatar{
+  border-radius: 4px;
+}
+.modal#writeReviewAboutTechnican .name {
+  font-weight: 500;
+  font-size: 16px;
+  color: #2D3D4D;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.modal#writeReviewAboutTechnican .location-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.modal#writeReviewAboutTechnican .location-wrapper img {
+  margin-right: 5px;
+}
+.modal#writeReviewAboutTechnican .location-wrapper span.location {
+  font-size: 12px;
+  color: #AFBAC6;
+}
+
+.modal#writeReviewAboutTechnican  .title {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: #2D3D4C;
+  margin: 27px 0 33px 0;
+
+}
+
+.modal#writeReviewAboutTechnican div.sad-block,
+.modal#writeReviewAboutTechnican div.confused-block,
+.modal#writeReviewAboutTechnican div.happy-block{
+  border-radius: 50%;
+  border: 2px solid transparent;
+  padding: 4px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.modal#writeReviewAboutTechnican div.sad-block:hover,
+.modal#writeReviewAboutTechnican div.sad-block.selected {
+  border: 2px solid #ff5858;
+}
+
+.modal#writeReviewAboutTechnican div.confused-block:hover,
+.modal#writeReviewAboutTechnican div.confused-block.selected{
+  border: 2px solid #ffc10e;
+}
+
+.modal#writeReviewAboutTechnican div.happy-block.selected,
+.modal#writeReviewAboutTechnican div.happy-block:hover{
+  border: 2px solid #1fe174;
+}
+.modal#writeReviewAboutTechnican div.rating-block {
+  margin: 22px 0;
+}
+.modal#writeReviewAboutTechnican div.rating-block div.criteria {
+  margin: 0 0.5rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #2D3D4D;
+}
+.modal#writeReviewAboutTechnican div.rating-block div.criteria span {
+  margin-bottom: 1rem;
+}
+.modal#writeReviewAboutTechnican .comment-area {
+  min-height: 120px;
+}
+
+.modal#writeReviewAboutTechnican .comment-area::placeholder {
+  font-size: 14px;
+  color: #BEC9D2;
+  font-family: Poppins, sans-serif;
+}
+
+.modal#writeReviewAboutTechnican .btn-save{
+  width: 100%;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 60px;
+
+}
+
+.modal {
+  height: unset;
+  padding:  0 50px 50px 50px;
+  position: relative;
+}
+.modal a.close-modal {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  #requests div.part-1 {
+    padding: 0 2em;
+  }
+
+  #requests div.part-2 {
+    padding: 0 2em;
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  #requests div.part-1{
+    padding: 50px 1rem 0;
+  }
+  #requests div.part-1 .title {
+    margin: auto;
+  }
+  #requests div.part-1 div.select-wrapper {
+    margin: auto 0 auto auto;
+  }
+
+
+  #requests div.part-2 div.accordion div.card div.card-header {
+    padding: 0 1rem 0 0;
+  }
+  #requests div.part-2  div.table-head-row {
+    display: none;
+  }
+  #requests div.part-2 div.accordion div.card div.card-header div.column-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 0 22px 1rem;
+  }
+  #requests div.part-2 div.accordion div.card div.card-header button {
+    margin: 22px 0 auto auto ;
+  }
+
+  #requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.table-head,
+  #requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.title{
+    display: inline-block;
+  }
+  #requests div.part-2 div.accordion div.card div.card-header div.column-wrapper span.table-head {
+    margin-bottom: 1rem;
+  }
+
+  #requests div.part-2 div.accordion div.card div.card-header div.border-wrapper div.border-spacer {
+    width: 0;
+    background: none;
+    height: 100%;
+  }
+
+  #requests div.part-2 div.accordion div.card div.card-body {
+    padding: 40px 0;
+  }
+
+
+
+}
+
+@media (max-width: 567px) {
+  #requests div.part-2 div.accordion div.card div.card-body div.history-block {
+    display: none;
+  }
+  .modal {
+
+    padding:  0 1rem 1rem 1rem;
+
+  }
+  #requests div.sidebar-wrapper {
+    position: absolute;
+    z-index: 1;
+    max-width: 100%;
+  }
+
+  #requests div.part-2 div.accordion div.card div.card-body div.rating {
+    padding: 33px 1rem 26px 1rem;
+  }
+}
+
+
+
